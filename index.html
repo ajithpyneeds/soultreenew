@@ -164,7 +164,7 @@
             <div class="call">
                 <i class="fa fa-phone"></i>
             </div>
-            <div style="width: 25vw; margin-left: -11vw; font-family: Titillium Web, sans-serif;">
+            <div id="numM" style="width: 25vw; margin-left: -11vw; font-family: Titillium Web, sans-serif;">
                 <a href="" style="color: black; font-size: 3vw; font-weight: 600;">+91 9008 288 288</a>
             </div>
             <div class="dropbtn" onclick="dropdownM()">Download Brochure</div>
@@ -708,7 +708,7 @@
                 <div style="display:flex">
                     <div class="selection">
                         <div class="type-selection">
-                            <p>Type</p>
+                            <p>BHK</p>
                             <div class="click-btn" id="click-btn">
                                 <button class="click-btn-1">1</button>
                                 <button class="click-btn-1">2</button>
@@ -1421,6 +1421,13 @@
         });
 
         TweenMax.from('.call, .num',  1, {
+        y: 20,
+        delay: 1,
+        opacity: 0,
+        ease: Expo.easeInOut
+        });
+
+        TweenMax.from('.numM',  1, {
         y: 20,
         delay: 1,
         opacity: 0,

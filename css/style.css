@@ -1924,7 +1924,7 @@ body {
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
   z-index: 10;
-  margin-top: 17vw;
+  margin-top: 15.5vw;
   margin-left: 3vw;
   color: #000000;
   border: none;
@@ -1951,7 +1951,7 @@ body {
           order: 1;
   position: relative;
   width: 27.24vw;
-  margin-top: 17vw;
+  margin-top: 15.5vw;
 }
 
 .carousel-2 .carousel-flex .carousel-descrip_t1 .carousel-title {
@@ -2559,7 +2559,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 4.3vw;
-  padding-bottom: 10vw;
+  padding-bottom: 8vw;
   /* For IE10 */
 }
 
@@ -2621,6 +2621,7 @@ body {
   color: #000000;
   width: 10.5vw;
   height: 3vw;
+  padding-left: .7vw;
   border-radius: 3px;
   border: 1px solid;
   font-size: 1.04vw;
@@ -2761,6 +2762,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 4.3vw;
+  padding-bottom: 8vw;
   /* For IE10 */
 }
 
@@ -2822,6 +2824,7 @@ body {
   color: #000000;
   width: 10.5vw;
   height: 3vw;
+  padding-left: .7vw;
   border-radius: 3px;
   border: 1px solid;
   font-size: 1.04vw;
@@ -2962,6 +2965,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 4.3vw;
+  padding-bottom: 8vw;
   /* For IE10 */
 }
 
@@ -3023,6 +3027,7 @@ body {
   color: #000000;
   width: 10.5vw;
   height: 3vw;
+  padding-left: .7vw;
   border-radius: 3px;
   border: 1px solid;
   font-size: 1.04vw;
@@ -3257,6 +3262,7 @@ body {
     color: #000000;
     width: 25vw;
     height: 8vw;
+    padding-left: 2vw;
     border-radius: 3px;
     border: 1px solid;
     font-size: 3.38vw;
@@ -3448,6 +3454,7 @@ body {
     color: #000000;
     width: 25vw;
     height: 8vw;
+    padding-left: 2vw;
     border-radius: 3px;
     border: 1px solid;
     font-size: 3.38vw;
@@ -3638,6 +3645,7 @@ body {
     color: #000000;
     width: 25vw;
     height: 8vw;
+    padding-left: 2vw;
     border-radius: 3px;
     border: 1px solid;
     font-size: 3.38vw;
@@ -4056,7 +4064,7 @@ body {
   position: relative;
   padding-top: 6.56vw;
   padding-bottom: 12vw;
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   color: #000000;
   font-family: Titillium Web, sans-serif;
   z-index: 100;
@@ -4225,7 +4233,7 @@ body {
     position: relative;
     padding-top: 12vw;
     padding-bottom: 24vw;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     color: #000000;
     font-family: Titillium Web, sans-serif;
     z-index: 100;
@@ -4390,12 +4398,12 @@ body {
   height: 65vw;
   font-family: Titillium Web, sans-serif;
   z-index: 100;
-  background-color: #ffffff;
+  background-color: #e8e3db;
 }
 
 .amenities .amenities-title {
   position: relative;
-  padding-top: 10vw;
+  padding-top: 8vw;
   font-size: 3.125vw;
   font-weight: 600;
   padding-left: 14.9vw;
@@ -4633,7 +4641,7 @@ body {
     margin-bottom: 10vw;
     height: 170vw;
     font-family: Titillium Web, sans-serif;
-    background-color: #ffffff;
+    background-color: #e8e3db;
     z-index: 200;
   }
   .amenities .amenities-title {
