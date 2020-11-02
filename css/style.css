@@ -4629,6 +4629,7 @@ body {
 }
 
 .amenities .carousel-3 .carousel-flex3 .carousel-descrip_tb .carousel-details {
+  list-style-type: circle;
   font-size: 1.2vw;
   line-height: 1.43;
 }
