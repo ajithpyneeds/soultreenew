@@ -1,3 +1,32 @@
+
+// Get the modal
+var modalForm = document.getElementById("myModalForm");
+
+// Get the button that opens the modal
+var btnForm = document.getElementById("myBtn");
+var btnFormMob = document.getElementById("myBtnMob");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btnForm.onclick = function() {
+  modalForm.style.display = "block";
+}
+
+btnFormMob.onclick = function() {
+  modalForm.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalForm) {
+    modalForm.style.display = "none";
+  }
+}
+
+
+
 // onscroll snap sticky navbar #########################################
 window.onscroll = function() {scrollFunction()};
 
@@ -232,9 +261,7 @@ console.log()
 //   if (sl1.style.display === 'block') {
 //     act.style.display = 'none';
 //   }
-// }
-
-
+//
 
 
 

@@ -7,7 +7,25 @@
 
     <!-- Normalize Style Sheet -->
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <!-- rajath -->
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -58,10 +76,7 @@
         <div class="line"></div>
         <div class="line"></div>
     </div> -->
-      
-
-
-
+    
     <div class="landing-img content-desktop">
         <img src="images/Banner1.jpg">
     </div>
@@ -69,7 +84,6 @@
     <div class="landing-img content-mobile">
         <img src="images/bannerMobile.png">
     </div>
-
 
     <!-- Navbar Starts [Desktop]-->
     <div class="nav-bar content-desktop" id="navbar">
@@ -156,7 +170,7 @@
             <div class="num" href style="width: 11vw; color: black; font-family: Titillium Web, sans-serif;">
                 <a href="" style="color: black; font-size: 1.04vw; font-weight: 600;">+91 9008 288 288</a>
             </div>
-            <div class="dropbtn" onclick="dropdown()">Download Brochure</div>
+            <div class="dropbtn" id="myBtn">Download Brochure</div>
         </div>
     </div>
 
@@ -168,7 +182,7 @@
             <div class="numM" style="width: 25vw; margin-left: -11vw; font-family: Titillium Web, sans-serif;">
                 <a href="tel:+91 9008 288 288" style="color: black; font-size: 3vw; font-weight: 600;">+91 9008 288 288</a>
             </div>
-            <div class="dropbtn" onclick="dropdownM()">Download Brochure</div>
+            <div class="dropbtn" id="myBtnMob">Download Brochure</div>
         </div>
     </div>
 
@@ -215,7 +229,7 @@
             GET IN TOUCH
         </div>
 
-        <div class="git-container animate__animated" id="getInTouchId">
+        <div class="git-container" id="getInTouchId">
             <svg viewBox="0 0 32 32" onclick="getInTouch()">
                 <polygon points="28.71 4.71 27.29 3.29 16 14.59 4.71 3.29 3.29 4.71 14.59 16 3.29 27.29 4.71 28.71 16 17.41 27.29 28.71 28.71 27.29 17.41 16 28.71 4.71"></polygon>
             </svg>
@@ -257,11 +271,11 @@
 
     <!-- #################################################################################### -->
         <div class="main-section"></div>
-        <p class="main-title" data-aos="fade-up" data-aos-delay="200">
+        <p class="main-title">
             For the generation of today, <br>
             tomorrow & future.
         </p>
-        <p class="main-subtitle" data-aos="fade-up" data-aos-delay="300">
+        <p class="main-subtitle">
             Soul Tree is made for the free-thinking generation of today. A generation defined by their ideas rather than individualities. For whom home is more than just space and open spaces serve as their platform to meet, greet, mingle, enjoy, grow & so much more. Our tribute to the generation of today, tomorrow & future.
         </p>
 
@@ -270,7 +284,7 @@
                 <img src="images/Color-Splash-1.png" alt="">
             </div>
 
-            <div class="carousel-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="carousel-flex">
                 <div class="carousel">
                     <ul class="carousel__list">
                         <img src="images/section2/Relax & Rejuvenate.jpg" alt="" class="carousel__item" data-pos="-2"  id="-2" onclick="fn(id)">
@@ -332,10 +346,10 @@
             </div>
         </div>
 
-        <p class="carousel-2-title" id="explore-soultree" data-aos="fade-up" data-aos-delay="200">Explore Soultree</p>
+        <p class="carousel-2-title" id="explore-soultree">Explore Soultree</p>
         
         <div class="carousel-2">
-            <div class="carousel-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="carousel-flex">
                 <div class="carousel" id="g1">
                     <ul class="carousel_list" id="g1__list11">
                         <img src="images/section3/Feel the light.jpg" alt="" class="carousel_item1" data-pos="-2" id="-2_a" id="-2" onclick="fn22(id)">
@@ -401,24 +415,24 @@
         </div>
 
         <div class="master-plan content-desktop" id="master-pln">
-            <div class="master-plan-img" data-aos="fade-up" data-aos-delay="200">
+            <div class="master-plan-img">
                 <img src="images/MASTER-PLAN.png">
             </div>
             <div class="master-plan-descrip">
-                <div class="master-plan-title" data-aos="fade-up" data-aos-delay="200">Master plan</div>
-                <li data-aos="fade-up" data-aos-delay="300">
+                <div class="master-plan-title">Master plan</div>
+                <li>
                     <p class="specs">Land Area</p>
                     <p class="spec-details">3 Acres</p>
                 </li>
-                <li data-aos="fade-up" data-aos-delay="350">
+                <li>
                     <p class="specs">BHK</p>
                     <p class="spec-details">1, 2 & 3</p>
                 </li>
-                <li data-aos="fade-up" data-aos-delay="400">
+                <li>
                     <p class="specs">Units</p>
                     <p class="spec-details">538</p>
                 </li>
-                <li data-aos="fade-up" data-aos-delay="450">
+                <li>
                     <p class="specs">Club House</p>
                     <p class="spec-details">20,000 sqft</p>
                 </li>
@@ -426,24 +440,24 @@
         </div>
 
         <div class="master-plan content-mobile" id="master-planM">
-            <div class="master-plan-title" data-aos="fade-up" data-aos-delay="200">Master plan</div>
-            <div class="master-plan-img" data-aos="fade-up" data-aos-delay="300">
+            <div class="master-plan-title">Master plan</div>
+            <div class="master-plan-img">
                 <img src="images/MASTER-PLAN.png">
             </div>
             <div class="master-plan-descrip">
-                <li data-aos="fade-up" data-aos-delay="400">
+                <li>
                     <p class="specs">Land Area</p>
                     <p class="spec-details">3 Acres</p>
                 </li>
-                <li data-aos="fade-up" data-aos-delay="400">
+                <li>
                     <p class="specs">BHK</p>
                     <p class="spec-details">1, 2 & 3</p>
                 </li>
-                <li data-aos="fade-up" data-aos-delay="500">
+                <li>
                     <p class="specs">Units</p>
                     <p class="spec-details">538</p>
                 </li>
-                <li data-aos="fade-up" data-aos-delay="500">
+                <li>
                     <p class="specs">Club House</p>
                     <p class="spec-details">20,000 sqft</p>
                 </li>
@@ -463,15 +477,15 @@
 
 
         <div class="floor-plans">
-            <div class="floor-plans-title" data-aos="fade-up" data-aos-delay="200">Floor Plans</div>
-            <div class="plan-specs tab" data-aos="fade-up" data-aos-delay="300">
+            <div class="floor-plans-title">Floor Plans</div>
+            <!-- <div class="plan-specs tab" data-aos="fade-up" data-aos-delay="300">
                 <div class="spec  active-spec tablinks" id="snty" onclick="serenityFunc(event,'serenity')">Serenity</div>
                 <div class="spec tablinks" id="bls" onclick="serenityFunc(event,'bliss')">Bliss</div>
                 <div class="spec tablinks" id="nrv" onclick="serenityFunc(event,'nirvana')">Nirvana</div>
-            </div>
+            </div> -->
 
             <div class="planView tabcontent" id="serenity">
-                <div style="display:flex">
+                <div class="plan-details">
                     <div class="selection">
                         <div class="type-selection">
                             <p>BHK</p>
@@ -493,16 +507,17 @@
                             </div>
                         </div>
                         <div class="building-blocks">
-                            <p data-aos="fade-up" data-aos-delay="850">Unit</p>
+                            <p>Blocks</p>
                             <div id="serenityBlock" onChange="serenityBlockFunction(this)" class="box11">
                                 <select id="serenitySelectBlock">
-                                    <option value="Typical Unit">Typical Unit</option>
-                                    <option value="Corner Unit">Corner Unit</option>
+                                    <option value="serenitySelection">Serenity</option>
+                                    <option value="blissSelection">Bliss</option>
+                                    <option value="nirvanaSelection">Nirvana</option>
                                 </select>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-containerSerenity" id="serenityCarousel" data-aos="fade-up" data-aos-delay="700">
+                    <div class="swiper-containerSerenity" id="serenityCarousel">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img id="myImg" class="myImg" src="images/soultreeFloorPlans/1bhk-West-facing-typical-2.png">
@@ -636,7 +651,7 @@
                 </div>
             </div>
 
-            <div class="planView tabcontent" id="bliss">
+            <!-- <div class="planView tabcontent" id="bliss">
                 <div style="display:flex">
                     <div class="selection">
                         <div class="type-selection">
@@ -700,9 +715,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="planView tabcontent" id="nirvana">
+            <!-- <div class="planView tabcontent" id="nirvana">
                 <div style="display:flex">
                     <div class="selection">
                         <div class="type-selection">
@@ -765,7 +780,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
          
         </div>
 
@@ -794,7 +809,7 @@
 
     <!-- #################################################################################### -->
     <div class="amenities" id="amenities">
-        <div class="amenities-title" data-aos="fade-up" data-aos-delay="200">Amenities</div> 
+        <div class="amenities-title">Amenities</div> 
 
         <div class="carousel-3"data-aos="fade-up" data-aos-delay="300" >
             <div class="carousel-flex3">
@@ -892,18 +907,18 @@
     <!-- #################################################################################### -->
     <div class="gallery" id="gallery">
         <div class="gallery-nav content-desktop">
-            <div class="gal content-desktop" data-aos="fade-up" data-aos-delay="200">Gallery</div>
-            <div class="gal-nav active-gal content-desktop" onclick="iFunc()" id="photos" data-aos="fade-up" data-aos-delay="350">Photos</div>
-            <div class="gal-nav content-desktop" onclick="vFunc()" id="walkthrough" data-aos="fade-up" data-aos-delay="500">Walkthrough</div>
+            <div class="gal content-desktop">Gallery</div>
+            <div class="gal-nav active-gal content-desktop" onclick="iFunc()" id="photos">Photos</div>
+            <div class="gal-nav content-desktop" onclick="vFunc()" id="walkthrough">Walkthrough</div>
         </div>
         
-        <div class="gal content-mobile" data-aos="fade-up" data-aos-delay="200">Gallery</div>
-        <div class="gallery-nav content-mobile" data-aos="fade-up" data-aos-delay="300">
+        <div class="gal content-mobile">Gallery</div>
+        <div class="gallery-nav content-mobile">
             <div class="gal-nav active-gal content-mobile" onclick="iMFunc()" id="photosM">Photos</div>
             <div class="gal-nav content-mobile" onclick="vMFunc()" id="walkthroughM">Walkthrough</div>
         </div>
 
-        <div class="gallery-view" data-aos="fade-up" data-aos-delay="600">
+        <div class="gallery-view">
             <iframe class="gal-img" style="display: none;" id="gal-V" src="https://www.youtube.com/embed/gnW_MOJ6rvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="gal-img" style="display: block; overflow-x: hidden; cursor: pointer;" id="gal-I">
                 <div class="swiper-wrapper">
@@ -997,8 +1012,8 @@
 
     <!-- #################################################################################### -->
     <div class="specBrand content-desktop">
-        <p data-aos="fade-up" data-aos-delay="200">SPECIFICATIONS & BRANDS</p>
-        <div class="btnFlex" data-aos="fade-up" data-aos-delay="350">
+        <p>SPECIFICATIONS & BRANDS</p>
+        <div class="btnFlex">
             <div class="buttn">
                 <a class="black-button" type="submit">KNOW MORE</a>
             </div>
@@ -1006,8 +1021,8 @@
     </div>
 
     <div class="specBrand content-mobile">
-        <p data-aos="fade-up" data-aos-delay="200">SPECIFICATIONS & BRANDS</p>
-        <div class="buttn" data-aos="fade-up" data-aos-delay="300">
+        <p>SPECIFICATIONS & BRANDS</p>
+        <div class="buttn">
             <a class="black-button" type="submit">KNOW MORE</a>
         </div>
     </div>
@@ -1015,52 +1030,52 @@
     <!-- #################################################################################### -->
     <!-- Location Section Starts-->
     <div class="location-section">
-        <p class="location-title" data-aos="fade-up" data-aos-delay="200">
+        <p class="location-title">
             A perfect location for a perfect home
         </p>
-        <p class="location-subtitle" data-aos="fade-up" data-aos-delay="250">
+        <p class="location-subtitle">
             Sompura Gate, Sarjapur Road, located in south-east Bangalore, is one of the fastest-growing parts of the city which makes it perfect & favoured property investment destinations. Despite it's close proximity to the IT hubs of the city it still retains the peaceful & serene aspect missing from almost every other part of the city which certainly are heading towards saturation.
         </p><br>
-        <p class="location-subtitle" data-aos="fade-up" data-aos-delay="300">
+        <p class="location-subtitle">
             The real estate demand in this location has seen a ten folds increase. Sarjapur Road enjoys robust residential demand and excellent connectivity to the IT hubs & hotspots like Koramangala, Whitefield, HSR, Electronic City, Marathahalli, Silk Board etc. The planned Metro rail extension, Outer Ring Road and the proposed eight-lane Peripheral Ring Road [PRR] which will reduce the travel time to airport considerably are expected to boost the realty sector here.
         </p>
         <div class="location-descrip">
-            <div class="location-img" id="mapImg" data-aos="fade-up" data-aos-delay="350">
+            <div class="location-img" id="mapImg">
                 <img src="images/Map.png">   
                 <p onclick="mapFunc()">View Map</p>      
             </div>
             <iframe class="location-img" id="map" style="display: none; border: 1px solid black;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9256920171847!2d77.6770247146445!3d12.912497390894686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae135d95d42c11%3A0xc20268292891ba2c!2sSoulTree%20by%20ModernSpaaces!5e0!3m2!1sen!2sin!4v1603023796674!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
             <div class="location-distance">
                 <ul>
-                    <li data-aos="fade-up" data-aos-delay="350">
+                    <li>
                         <p class="place">Dommasandra circle</p>
                         <p class="kms">4 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="350">
+                    <li>
                         <p class="place">Decatalon/ RGA Tech Park</p>
                         <p class="kms">9 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="400">
+                    <li>
                         <p class="place">Electronic City</p>
                         <p class="kms">14 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="400">
+                    <li>
                         <p class="place">Eco Space</p>
                         <p class="kms">15 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="450">
+                    <li>
                         <p class="place">Wipro Corporate Office</p>
                         <p class="kms">13 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="450">
+                    <li>
                         <p class="place">Total Mall</p>
                         <p class="kms">14 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="500">
+                    <li>
                         <p class="place">HSR Layout</p>
                         <p class="kms">17 KMS</p>
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="500">
+                    <li>
                         <p class="place">Marathahalli</p>
                         <p class="kms">19 KMS</p>
                     </li>
@@ -1112,22 +1127,22 @@
 
     <!-- #################################################################################### -->
     <div class="contact content-desktop" id="contact">
-        <p class="contact-title" data-aos="fade-up" data-aos-delay="200">
+        <p class="contact-title">
             We’d love to hear from you!
         </p>
-        <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="250">
+        <p class="contact-subtitle">
             We’re here answer queries and to guide and provide you with information you need in choosing the perfect
         </p>
         <form action="">
             <div class="inputA">
-                <input class="flex-input" type="text" placeholder="Name" maxlength="20" data-aos="fade-up" data-aos-delay="300">
-                <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}" data-aos="fade-up" data-aos-delay="300">
+                <input class="flex-input" type="text" placeholder="Name" maxlength="20">
+                <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}">
             </div>
             <div class="inputB">
-                <input type="email" name="email" placeholder="Email ID" data-aos="fade-up" data-aos-delay="350">
-                <input type="text" placeholder="What would you like to discuss?" maxlength="20" data-aos="fade-up" data-aos-delay="400">
+                <input type="email" name="email" placeholder="Email ID">
+                <input type="text" placeholder="What would you like to discuss?" maxlength="20">
             </div>
-            <div  data-aos="fade-up" data-aos-delay="400">
+            <div>
                 <div class="buttn">
                     <a class="black-button" type="submit">SUBMIT</a>
                 </div>
@@ -1136,21 +1151,21 @@
     </div>
 
     <div class="contact content-mobile">
-        <p class="contact-title" data-aos="fade-up" data-aos-delay="200">
+        <p class="contact-title">
             We’d love to hear from you!
         </p>
-        <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="250">
+        <p class="contact-subtitle">
             We’re here answer queries and to guide and provide you with information you need in choosing the perfect
         </p>
         <div class="inputA">
-            <input class="flex-input" type="text" placeholder="Name" maxlength="20" data-aos="fade-up" data-aos-delay="300">
-            <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}" data-aos="fade-up" data-aos-delay="350">
+            <input class="flex-input" type="text" placeholder="Name" maxlength="20">
+            <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}">
         </div>
         <div class="inputB">
-            <input type="email" name="email" placeholder="Email ID" data-aos="fade-up" data-aos-delay="400">
-            <input type="text" placeholder="What would you like to discuss?" maxlength="20" data-aos="fade-up" data-aos-delay="450">
+            <input type="email" name="email" placeholder="Email ID">
+            <input type="text" placeholder="What would you like to discuss?" maxlength="20">
         </div>
-        <div class="buttn" data-aos="fade-up" data-aos-delay="500">
+        <div class="buttn">
             <a class="black-button" type="submit">SUBMIT</a>
         </div>
     </div>
@@ -1186,16 +1201,16 @@
     <!-- Footer Starts [Desktop]-->
     <section class="footer content-desktop" id="footer">
         <div class="footer-main">
-            <h1 class="footer-title" data-aos="fade-up" data-aos-delay="100">New Age<br>
+            <h1 class="footer-title">New Age<br>
                 of Smart Homes
             </h1>
             <ul class="footer-nav-items">
-                <li data-aos="fade-up" data-aos-delay="200"><a href="#aboutUs">Explore Soultree</a></li>
-                <li data-aos="fade-up" data-aos-delay="250"><a href="#projects">Master Plan</a></li>
-                <li data-aos="fade-up" data-aos-delay="300"><a href="#residential">Gallery</a></li>
-                <li data-aos="fade-up" data-aos-delay="350"><a href="#decor">Amenities</a></li>
-                <li data-aos="fade-up" data-aos-delay="450"><a href="#contactUs">Contact</a></li>
-                <li data-aos="fade-up" data-aos-delay="500" class="vertical-line"></li>
+                <li><a href="#aboutUs">Explore Soultree</a></li>
+                <li><a href="#projects">Master Plan</a></li>
+                <li><a href="#residential">Gallery</a></li>
+                <li><a href="#decor">Amenities</a></li>
+                <li><a href="#contactUs">Contact</a></li>
+                <li class="vertical-line"></li>
             </ul>
         </div>
 
@@ -1210,16 +1225,16 @@
     <!-- Footer Starts [Mobile]-->
     <section class="footer content-mobile" data-snap-point id="footer">
         <div class="footer-main">
-            <h1 class="footer-title" data-aos="fade-up" data-aos-delay="100">New Age<br>
+            <h1 class="footer-title">New Age<br>
                 of Smart Homes
             </h1>
             <ul class="footer-nav-items">
-                <li data-aos="fade-up" data-aos-delay="200"><a href="#aboutUs">Explore Soultree</a></li>
-                <li data-aos="fade-up" data-aos-delay="250"><a href="#projects">Master Plan</a></li>
-                <li data-aos="fade-up" data-aos-delay="300"><a href="#residential">Gallery</a></li>
-                <li data-aos="fade-up" data-aos-delay="350"><a href="#decor">Amenities</a></li>
-                <li data-aos="fade-up" data-aos-delay="450"><a href="#contactUs">Contact</a></li>
-                <li data-aos="fade-up" data-aos-delay="500" class="vertical-line"></li>
+                <li><a href="#aboutUs">Explore Soultree</a></li>
+                <li><a href="#projects">Master Plan</a></li>
+                <li><a href="#residential">Gallery</a></li>
+                <li><a href="#decor">Amenities</a></li>
+                <li><a href="#contactUs">Contact</a></li>
+                <li class="vertical-line"></li>
             </ul>
         </div>
 
@@ -1232,6 +1247,24 @@
         </div>
     </section>
     <!-- Footer Ends [Mobile]-->
+
+     <!-- Download Broucher Form-->
+     <div class="modal-container"  id="myModalForm">
+        <div class="flex-div">
+            <span onclick="document.getElementById('myModalForm').style.display='none'">&times;</span>
+            <p>Get in touch</p>
+            <form action="">
+                <input class="flex-input" type="text" placeholder="Name" maxlength="20">
+                <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}">
+                <input type="email" name="email" placeholder="Email ID">
+                <input type="text" placeholder="What would you like to discuss?" maxlength="20">
+                <div class="buttn">
+                    <a class="black-button" type="submit">SUBMIT</a>
+                </div>
+            </form>
+            <div class="download">Download Broucher</div>
+        </div>
+    </div>
 
     
     <!-- #################################################################################### -->

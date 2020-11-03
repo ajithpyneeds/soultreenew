@@ -36,12 +36,248 @@ $fontThin: 300;
     text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: Titillium Web, sans-serif;
   text-decoration: none;
   list-style: none;
 }
+
+
+
+// Download Broucher Form
+.modal-container {
+  display: none;
+  position: fixed;
+  left: 0;
+    top: 0vw;
+    z-index: 2000;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  .flex-div {
+    background:#fff;
+    color: #000;
+    height: 36vw;
+    width: 25vw;
+    margin: auto;
+    padding: 2vw;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+    margin-top: 5vw;
+
+    span { 
+      position: absolute;
+      cursor: pointer;
+      margin-left: 20vw;
+      margin-top: -2vw;
+      color: $black;
+      font-size: 3vw;
+    }
+
+    svg {
+      width: 1.2vw;
+      height: 1.2vw;
+      margin-left: 20vw;
+      cursor: pointer;
+    }
+  
+    svg:hover {
+      color: #9b8e8e;
+    }
+  
+    p {
+      font-size: 2.1vw;
+      font-weight: $fontBold;
+    }
+  
+    form {
+      margin-top: 2vw;
+      padding-bottom: 1vw;
+  
+      input {
+        border: none;
+        padding-bottom: .5vw;
+        width: 100%;
+        -webkit-border-bottom: 1px solid $black;
+        border-bottom: 1px solid $black;
+        font-size: $p;
+        font-weight: $fontThin;
+        margin-bottom: 2.2vw;
+        outline:none;
+      }
+  
+      .buttn {
+        // margin-top: .5vw;
+        height: 3.54vw;
+        width: 12.4vw;
+        background-color: $black;
+        border-radius: 0.26vw;
+        transition: width 500ms;
+        -webkit-transition: width 500ms;
+        // margin-left: 57.6vw;
+        
+        .black-button {
+            border: none;
+            height: 3.54vw;
+            width: 12.4vw;
+            display:-webkit-flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9vw;
+            letter-spacing: 3.44px;
+            border-radius: 0.26vw;
+            font-weight: $fontBold;
+            color: $white-two;
+        }
+      }
+    
+      .buttn:hover {
+        height: 3.54vw;
+        width: 0;
+    
+        .black-button {
+            color: $black;
+        }
+    
+        .black-button::after {
+            content: '\f105';
+            font-family: fontAwesome;
+            font-size: .9vw;
+            font-weight: $fontThin;
+            padding-left: .6vw;
+            color: $black;
+        }
+      }
+    }
+
+    .download {
+      color: $white-two;
+      border-radius: .5vw;
+      font-size: 1vw;
+      padding: .5vw 1vw;
+      background: $black;
+      text-align: center;
+    }
+  }
+}
+
+                                            @media only screen and (max-width:1000px) {
+                                              .modal-container {
+                                                display: none;
+                                                position: fixed;
+                                                left: 0;
+                                                  top: 0vw;
+                                                  z-index: 2000;
+                                                width: 100vw; /* Full width */
+                                                height: 100vh; /* Full height */
+                                                overflow: auto; /* Enable scroll if needed */
+                                                background-color: rgb(0,0,0); /* Fallback color */
+                                                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                                              
+                                                .flex-div {
+                                                  background:#fff;
+                                                  color: #000;
+                                                  height: 120vw;
+                                                  width: 86vw;
+                                                  margin: auto;
+                                                  padding: 3vw;
+                                                  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+                                                  margin-top: 20vw;
+                                              
+                                                  span { 
+                                                    position: absolute;
+                                                    cursor: pointer;
+                                                    margin-left: 20vw;
+                                                    margin-top: -2vw;
+                                                    color: $black;
+                                                    font-size: 3vw;
+                                                  }
+                                                
+                                                  p {
+                                                    font-size: 6.76vw;
+                                                    font-weight: $fontBold;
+                                                  }
+                                                
+                                                  form {
+                                                    margin-top: 8vw;
+                                                    padding-bottom: 1vw;
+                                                
+                                                    input {
+                                                      border: none;
+                                                      padding-bottom: 2.5vw;
+                                                      width: 100%;
+                                                      -webkit-border-bottom: 1px solid $black;
+                                                      border-bottom: 1px solid $black;
+                                                      font-size: 3.38;
+                                                      font-weight: $fontThin;
+                                                      margin-bottom: 5vw;
+                                                      outline:none;
+                                                    }
+                                                
+                                                    .buttn {
+                                                      height: 13.77vw;
+                                                      width: 45vw;
+                                                      background-color: $black;
+                                                      border-radius: 1vw;
+                                                      transition: width 500ms;
+                                                      -webkit-transition: width 500ms;
+                                                      // margin-left: 57.6vw;
+                                                      
+                                                      .black-button {
+                                                          border: none;
+                                                          height: 13.77vw;
+                                                          width: 45vw;
+                                                          display:-webkit-flex;
+                                                          display: flex;
+                                                          justify-content: center;
+                                                          align-items: center;
+                                                          font-size: 3.38vw;
+                                                          letter-spacing: 3.44px;
+                                                          border-radius: 0.26vw;
+                                                          font-weight: $fontBold;
+                                                          color: $white-two;
+                                                      }
+                                                    }
+                                                  
+                                                    .buttn:hover {
+                                                      height: 13.77vw;
+                                                      width: 0;
+                                                  
+                                                      .black-button {
+                                                          color: $black;
+                                                      }
+                                                  
+                                                      .black-button::after {
+                                                          content: '\f105';
+                                                          font-family: fontAwesome;
+                                                          font-size: 4vw;
+                                                          font-weight: $fontThin;
+                                                          padding-left: 2vw;
+                                                          color: $black;
+                                                      }
+                                                    }
+                                                  }
+                                              
+                                                  .download {
+                                                    margin-top: 2vw;
+                                                    color: $white-two;
+                                                    border-radius: 1vw;
+                                                    font-size: 3.38vw;
+                                                    padding: 1.5vw 3vw;
+                                                    background: $black;
+                                                    text-align: center;
+                                                  }
+                                                }
+                                              }
+                                            }
 
 
 
@@ -3081,6 +3317,10 @@ body {
       margin-top: 4.3vw;
       padding-bottom: 8vw;
 
+      .plan-details {
+        display: flex;
+      }
+
       .selection {
         display: block;
         margin-right: 2vw;
@@ -3266,11 +3506,12 @@ body {
                                                         font-family: Titillium Web, sans-serif;
                                                         // height: 55vw;
                                                         width: 100vw;
+                                                        margin: auto;
                                                         padding-left: 0vw;
                                                         margin-top: 8vw;
                                                         padding-bottom: 15vw;
                                                         margin-bottom: 11vw;
-                                                        height: 110vw;
+                                                        height: 170vw;
                                                         overflow: hidden;
                                                     
                                                         .floor-plans-title {
@@ -3278,31 +3519,31 @@ body {
                                                           margin: auto;
                                                           font-size: 6.76vw;
                                                           font-weight: $fontBold;
-                                                          margin-bottom: 8vw;
+                                                          margin-bottom: 3vw;
                                                           color: $black;
                                                         }
                                                     
-                                                        .plan-specs {
-                                                          margin-left: 0vw;
-                                                          width: 86vw;
-                                                          margin: auto;
-                                                          display:-webkit-flex;
-                                                          display: flex;
-                                                          justify-content: space-between;
-                                                          border-bottom: 1px solid #707070;
+                                                        // .plan-specs {
+                                                        //   margin-left: 0vw;
+                                                        //   width: 86vw;
+                                                        //   margin: auto;
+                                                        //   display:-webkit-flex;
+                                                        //   display: flex;
+                                                        //   justify-content: space-between;
+                                                        //   border-bottom: 1px solid #707070;
                                                     
-                                                          .spec {
-                                                            font-size: 5.31vw;
-                                                            font-weight: $fontBold;
-                                                            padding-bottom: .4vw;
-                                                            color: #b2b2b2;
-                                                          }
+                                                        //   .spec {
+                                                        //     font-size: 5.31vw;
+                                                        //     font-weight: $fontBold;
+                                                        //     padding-bottom: .4vw;
+                                                        //     color: #b2b2b2;
+                                                        //   }
                                                     
-                                                          .active-spec {
-                                                            border-bottom: 2px solid $black;
-                                                            color: $black;
-                                                          }
-                                                        }
+                                                        //   .active-spec {
+                                                        //     border-bottom: 2px solid $black;
+                                                        //     color: $black;
+                                                        //   }
+                                                        // }
 
                                                         .planView {
                                                           margin-left: 3.03vw;
@@ -3310,18 +3551,46 @@ body {
                                                           display: flex;
                                                           margin-top: 4.3vw;
                                                           overflow: hidden;
+
+                                                          .plan-details {
+                                                            display: block;
+                                                          }
                                                     
                                                           .selection {
-                                                            display: block;
-                                                            margin-right: 4.22vw;
+                                                            display: flex;
+                                                            // margin-right: 4.22vw;
                                                             margin-top: 6vw;
                                                           }
                                                         
-                                                          .type-selection, .facing, .building-blocks {
-                                                              margin-bottom: 6.03vw;
+                                                          .type-selection {
+                                                            width: 86vw;
+                                                            margin: auto;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            margin-bottom: 6.03vw;
+                                                          }
+
+                                                          .facing {
+                                                            margin-bottom: 6.03vw;
+                                                            margin-left: 12vw;
+                                                          }
+
+                                                          .building-blocks {
+                                                            position: absolute;
+                                                            margin-top: -28.6vw;
+                                                            margin-left: 52vw;
+                                                            margin-bottom: 6.03vw;
                                                           }
                                                           
-                                                          .type-selection p, .facing p, .building-blocks p {
+                                                          .type-selection p {
+                                                              font-size: 3.38vw;
+                                                              margin-bottom: 1.2vw;
+                                                              font-weight: $fontBold;
+                                                              margin-top: 3vw;
+                                                              margin-right: 4vw;
+                                                          }
+
+                                                          .facing p, .building-blocks p {
                                                               font-size: 3.38vw;
                                                               margin-bottom: 1.2vw;
                                                               font-weight: $fontBold;
@@ -3331,14 +3600,15 @@ body {
                                                             display:-webkit-flex;
                                                               display: flex;
                                                               margin-top: .5vw;
-                                                          }
-                                                          
-                                                          .click-btn-1 {
-                                                              font-size: 3.38vw;
-                                                              font-weight: 300;
-                                                              padding: 2.4vw 3vw;
-                                                              border: 1px solid $white-six;
-                                                              background-color: $white-five;
+
+                                                              .click-btn-1 {
+                                                                font-size: 3.38vw;
+                                                                font-weight: 300;
+                                                                padding: 3vw 8vw;
+                                                                border: 1px solid $white-six;
+                                                                background-color: $white-five;
+                                                                outline: none;
+                                                            }
                                                           }
                                                           
                                                           .active, .click-btn-1:hover {
@@ -3412,16 +3682,18 @@ body {
                                                           }
                                                     
                                                           .swiper-containerSerenity {
-                                                            margin-left: 8vw;
-                                                            width: 58vw;
-                                                            height: 74vw;
+                                                            width: 86vw;
+                                                            height: 112vw;
+                                                            margin: auto;
+                                                            margin-top: 13vw;
+                                                            margin-left: 4vw;
                                                             padding-left: 0vw;
                                                             color: $black;
                                                             overflow: hidden;
                                                     
                                                             .swiper-slide {
-                                                              width: 58vw;
-                                                              height: 50vw;
+                                                              width: 86vw;
+                                                              height: 85vw;
                                                               display:-webkit-flex;
                                                               display: flex;
                                                               flex-direction: column;
@@ -3452,7 +3724,7 @@ body {
                                                               background-color: $white-two;
                                                               z-index: 10;
                                                               margin-top: -10vw;
-                                                              margin-left: 22vw;
+                                                              margin-left: 30vw;
                                                               color: $black;
                                                               transform: scale(2);
                                                               border: none;
@@ -3477,7 +3749,7 @@ body {
                                                               background-color: $white-two;
                                                               z-index: 10;
                                                               margin-top: -10vw;
-                                                              margin-left: 34vw;
+                                                              margin-left: 50vw;
                                                               color: $black;
                                                               transform: scale(2);
                                                               border: none;

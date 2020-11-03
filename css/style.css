@@ -7,11 +7,252 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: Titillium Web, sans-serif;
   text-decoration: none;
   list-style: none;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0vw;
+  z-index: 2000;
+  width: 100vw;
+  /* Full width */
+  height: 100vh;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-container .flex-div {
+  background: #fff;
+  color: #000;
+  height: 36vw;
+  width: 25vw;
+  margin: auto;
+  padding: 2vw;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  margin-top: 5vw;
+}
+
+.modal-container .flex-div span {
+  position: absolute;
+  cursor: pointer;
+  margin-left: 20vw;
+  margin-top: -2vw;
+  color: #000000;
+  font-size: 3vw;
+}
+
+.modal-container .flex-div svg {
+  width: 1.2vw;
+  height: 1.2vw;
+  margin-left: 20vw;
+  cursor: pointer;
+}
+
+.modal-container .flex-div svg:hover {
+  color: #9b8e8e;
+}
+
+.modal-container .flex-div p {
+  font-size: 2.1vw;
+  font-weight: 600;
+}
+
+.modal-container .flex-div form {
+  margin-top: 2vw;
+  padding-bottom: 1vw;
+}
+
+.modal-container .flex-div form input {
+  border: none;
+  padding-bottom: .5vw;
+  width: 100%;
+  -webkit-border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  font-size: 1.04vw;
+  font-weight: 300;
+  margin-bottom: 2.2vw;
+  outline: none;
+}
+
+.modal-container .flex-div form .buttn {
+  height: 3.54vw;
+  width: 12.4vw;
+  background-color: #000000;
+  border-radius: 0.26vw;
+  transition: width 500ms;
+  -webkit-transition: width 500ms;
+}
+
+.modal-container .flex-div form .buttn .black-button {
+  border: none;
+  height: 3.54vw;
+  width: 12.4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9vw;
+  letter-spacing: 3.44px;
+  border-radius: 0.26vw;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.modal-container .flex-div form .buttn:hover {
+  height: 3.54vw;
+  width: 0;
+}
+
+.modal-container .flex-div form .buttn:hover .black-button {
+  color: #000000;
+}
+
+.modal-container .flex-div form .buttn:hover .black-button::after {
+  content: '\f105';
+  font-family: fontAwesome;
+  font-size: .9vw;
+  font-weight: 300;
+  padding-left: .6vw;
+  color: #000000;
+}
+
+.modal-container .flex-div .download {
+  color: #ffffff;
+  border-radius: .5vw;
+  font-size: 1vw;
+  padding: .5vw 1vw;
+  background: #000000;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .modal-container {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0vw;
+    z-index: 2000;
+    width: 100vw;
+    /* Full width */
+    height: 100vh;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: black;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
+  .modal-container .flex-div {
+    background: #fff;
+    color: #000;
+    height: 120vw;
+    width: 86vw;
+    margin: auto;
+    padding: 3vw;
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 20vw;
+  }
+  .modal-container .flex-div span {
+    position: absolute;
+    cursor: pointer;
+    margin-left: 20vw;
+    margin-top: -2vw;
+    color: #000000;
+    font-size: 3vw;
+  }
+  .modal-container .flex-div p {
+    font-size: 6.76vw;
+    font-weight: 600;
+  }
+  .modal-container .flex-div form {
+    margin-top: 8vw;
+    padding-bottom: 1vw;
+  }
+  .modal-container .flex-div form input {
+    border: none;
+    padding-bottom: 2.5vw;
+    width: 100%;
+    -webkit-border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    font-size: 3.38;
+    font-weight: 300;
+    margin-bottom: 5vw;
+    outline: none;
+  }
+  .modal-container .flex-div form .buttn {
+    height: 13.77vw;
+    width: 45vw;
+    background-color: #000000;
+    border-radius: 1vw;
+    transition: width 500ms;
+    -webkit-transition: width 500ms;
+  }
+  .modal-container .flex-div form .buttn .black-button {
+    border: none;
+    height: 13.77vw;
+    width: 45vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 3.38vw;
+    letter-spacing: 3.44px;
+    border-radius: 0.26vw;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .modal-container .flex-div form .buttn:hover {
+    height: 13.77vw;
+    width: 0;
+  }
+  .modal-container .flex-div form .buttn:hover .black-button {
+    color: #000000;
+  }
+  .modal-container .flex-div form .buttn:hover .black-button::after {
+    content: '\f105';
+    font-family: fontAwesome;
+    font-size: 4vw;
+    font-weight: 300;
+    padding-left: 2vw;
+    color: #000000;
+  }
+  .modal-container .flex-div .download {
+    margin-top: 2vw;
+    color: #ffffff;
+    border-radius: 1vw;
+    font-size: 3.38vw;
+    padding: 1.5vw 3vw;
+    background: #000000;
+    text-align: center;
+  }
 }
 
 .landing-img {
@@ -3434,6 +3675,12 @@ body {
   /* For IE10 */
 }
 
+.floor-plans .planView .plan-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .floor-plans .planView .selection {
   display: block;
   margin-right: 2vw;
@@ -3632,11 +3879,12 @@ body {
   .floor-plans {
     font-family: Titillium Web, sans-serif;
     width: 100vw;
+    margin: auto;
     padding-left: 0vw;
     margin-top: 8vw;
     padding-bottom: 15vw;
     margin-bottom: 11vw;
-    height: 110vw;
+    height: 170vw;
     overflow: hidden;
   }
   .floor-plans .floor-plans-title {
@@ -3644,29 +3892,7 @@ body {
     margin: auto;
     font-size: 6.76vw;
     font-weight: 600;
-    margin-bottom: 8vw;
-    color: #000000;
-  }
-  .floor-plans .plan-specs {
-    margin-left: 0vw;
-    width: 86vw;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    border-bottom: 1px solid #707070;
-  }
-  .floor-plans .plan-specs .spec {
-    font-size: 5.31vw;
-    font-weight: 600;
-    padding-bottom: .4vw;
-    color: #b2b2b2;
-  }
-  .floor-plans .plan-specs .active-spec {
-    border-bottom: 2px solid #000000;
+    margin-bottom: 3vw;
     color: #000000;
   }
   .floor-plans .planView {
@@ -3678,15 +3904,44 @@ body {
     overflow: hidden;
     /* For IE10 */
   }
-  .floor-plans .planView .selection {
+  .floor-plans .planView .plan-details {
     display: block;
-    margin-right: 4.22vw;
+  }
+  .floor-plans .planView .selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 6vw;
   }
-  .floor-plans .planView .type-selection, .floor-plans .planView .facing, .floor-plans .planView .building-blocks {
+  .floor-plans .planView .type-selection {
+    width: 86vw;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 6.03vw;
   }
-  .floor-plans .planView .type-selection p, .floor-plans .planView .facing p, .floor-plans .planView .building-blocks p {
+  .floor-plans .planView .facing {
+    margin-bottom: 6.03vw;
+    margin-left: 12vw;
+  }
+  .floor-plans .planView .building-blocks {
+    position: absolute;
+    margin-top: -28.6vw;
+    margin-left: 52vw;
+    margin-bottom: 6.03vw;
+  }
+  .floor-plans .planView .type-selection p {
+    font-size: 3.38vw;
+    margin-bottom: 1.2vw;
+    font-weight: 600;
+    margin-top: 3vw;
+    margin-right: 4vw;
+  }
+  .floor-plans .planView .facing p, .floor-plans .planView .building-blocks p {
     font-size: 3.38vw;
     margin-bottom: 1.2vw;
     font-weight: 600;
@@ -3697,12 +3952,13 @@ body {
     display: flex;
     margin-top: .5vw;
   }
-  .floor-plans .planView .click-btn-1 {
+  .floor-plans .planView .click-btn .click-btn-1 {
     font-size: 3.38vw;
     font-weight: 300;
-    padding: 2.4vw 3vw;
+    padding: 3vw 8vw;
     border: 1px solid #e0e0e0;
     background-color: #f8f8f8;
+    outline: none;
   }
   .floor-plans .planView .active, .floor-plans .planView .click-btn-1:hover {
     background-color: #000000;
@@ -3768,16 +4024,18 @@ body {
     margin-top: 17.5vw;
   }
   .floor-plans .planView .swiper-containerSerenity {
-    margin-left: 8vw;
-    width: 58vw;
-    height: 74vw;
+    width: 86vw;
+    height: 112vw;
+    margin: auto;
+    margin-top: 13vw;
+    margin-left: 4vw;
     padding-left: 0vw;
     color: #000000;
     overflow: hidden;
   }
   .floor-plans .planView .swiper-containerSerenity .swiper-slide {
-    width: 58vw;
-    height: 50vw;
+    width: 86vw;
+    height: 85vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3812,7 +4070,7 @@ body {
     background-color: #ffffff;
     z-index: 10;
     margin-top: -10vw;
-    margin-left: 22vw;
+    margin-left: 30vw;
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
@@ -3842,7 +4100,7 @@ body {
     background-color: #ffffff;
     z-index: 10;
     margin-top: -10vw;
-    margin-left: 34vw;
+    margin-left: 50vw;
     color: #000000;
     -webkit-transform: scale(2);
             transform: scale(2);
