@@ -6,7 +6,8 @@
     <title>Modern Spaaces</title>
 
     <!-- Normalize Style Sheet -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- rajath -->
 
     <!-- Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -131,7 +132,7 @@
             <ul class="nav-list">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="#explore-soultree" class="nav-link">Explore Soultree</a></li>
-                <li><a href="#master-plan" class="nav-link">Master Plan</a></li>
+                <li><a href="#master-planM" class="nav-link">Master Plan</a></li>
                 <li><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li><a href="#amenities" class="nav-link">Amenities</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -143,7 +144,7 @@
     <div class="menu-pages content-desktop" id="navbar2">
         <div>
             <a href="#explore-soultree" id="Exp-explore" class="tablinks-menu" onclick="menuFunc(event, 'explore-soultree')">Explore Soultree</a>
-            <a href="#master-plan" id="Mplan" class="tablinks-menu" onclick="menuFunc(event, 'master-plan')">Master Plan</a>
+            <a href="#master-pln" id="Mplan" class="tablinks-menu" onclick="menuFunc(event, '')">Master Plan</a>
             <a href="#gallery" id="Gall-gallery" class="tablinks-menu" onclick="menuFunc(event, 'gallery')">Gallery</a>
             <a href="#amenities" id="Amne" class="tablinks-menu" onclick="menuFunc(event, 'amenities')">Amenities</a>
             <a href="#contact" id="Cont" class="tablinks-menu" onclick="menuFunc(event, 'contact')">Contact</a>
@@ -152,7 +153,7 @@
             <div class="call">
                 <i class="fa fa-phone"></i>
             </div>
-            <div class="num" style="width: 11vw; color: black; font-family: Titillium Web, sans-serif;">
+            <div class="num" href style="width: 11vw; color: black; font-family: Titillium Web, sans-serif;">
                 <a href="" style="color: black; font-size: 1.04vw; font-weight: 600;">+91 9008 288 288</a>
             </div>
             <div class="dropbtn" onclick="dropdown()">Download Brochure</div>
@@ -164,28 +165,28 @@
             <div class="call">
                 <i class="fa fa-phone"></i>
             </div>
-            <div id="numM" style="width: 25vw; margin-left: -11vw; font-family: Titillium Web, sans-serif;">
-                <a href="" style="color: black; font-size: 3vw; font-weight: 600;">+91 9008 288 288</a>
+            <div class="numM" style="width: 25vw; margin-left: -11vw; font-family: Titillium Web, sans-serif;">
+                <a href="tel:+91 9008 288 288" style="color: black; font-size: 3vw; font-weight: 600;">+91 9008 288 288</a>
             </div>
             <div class="dropbtn" onclick="dropdownM()">Download Brochure</div>
         </div>
     </div>
 
-    <div class="dropdown content-desktop">
+    <!-- <div class="dropdown content-desktop">
         <div class="dropdown-content" id="dropdown-content">
           <p onclick="document.getElementById('dropdown-content').style.display='none'">Serenity</p>
           <p onclick="document.getElementById('dropdown-content').style.display='none'">Bliss</p>
           <p onclick="document.getElementById('dropdown-content').style.display='none'">Nirvana</p>
         </div>
-    </div>
+    </div> -->
     
-    <div class="dropdown content-mobile">
+    <!-- <div class="dropdown content-mobile">
         <div class="dropdown-content" id="dropdown-contentM">
           <p onclick="document.getElementById('dropdown-contentM').style.display='none'">Serenity</p>
           <p onclick="document.getElementById('dropdown-contentM').style.display='none'">Bliss</p>
           <p onclick="document.getElementById('dropdown-contentM').style.display='none'">Nirvana</p>
         </div>
-    </div>
+    </div> -->
 
     <script>
         function dropdown() {
@@ -210,6 +211,26 @@
     <!-- #################################################################################### -->
     <div class="landing-container">
 
+        <div class="getIn-touch" onclick="getInTouch()">
+            GET IN TOUCH
+        </div>
+
+        <div class="git-container animate__animated" id="getInTouchId">
+            <svg viewBox="0 0 32 32" onclick="getInTouch()">
+                <polygon points="28.71 4.71 27.29 3.29 16 14.59 4.71 3.29 3.29 4.71 14.59 16 3.29 27.29 4.71 28.71 16 17.41 27.29 28.71 28.71 27.29 17.41 16 28.71 4.71"></polygon>
+            </svg>
+            <p>Get in touch</p>
+            <form action="">
+                <input class="flex-input" type="text" placeholder="Name" maxlength="20">
+                <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}">
+                <input type="email" name="email" placeholder="Email ID">
+                <input type="text" placeholder="What would you like to discuss?" maxlength="20">
+                <div class="buttn">
+                    <a class="black-button" type="submit">SUBMIT</a>
+                </div>
+            </form>
+        </div>
+
         <div class="overlay-content">
             <div class="soultree-logo">
                 <img src="images/Soul-tree_G.png" alt="">
@@ -218,39 +239,21 @@
                 Fully automated futuristic & intelligent luxury 1, 2 and 3 BHK apartments with a multitude of amenities located
                 amidst green cover at Sompura Gate, Sarjapur Road
             </p>
-            <div class="getIn-touch" onclick="getInTouch()">
-                GET IN TOUCH
-            </div>
-            <div class="git-container animate__animated" id="getInTouchId">
-                <svg viewBox="0 0 32 32" onclick="getInTouch()">
-                    <polygon points="28.71 4.71 27.29 3.29 16 14.59 4.71 3.29 3.29 4.71 14.59 16 3.29 27.29 4.71 28.71 16 17.41 27.29 28.71 28.71 27.29 17.41 16 28.71 4.71"></polygon>
-                </svg>
-                <p>Get in touch</p>
-                <form action="">
-                    <input class="flex-input" type="text" placeholder="Name" maxlength="20">
-                    <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}">
-                    <input type="email" name="email" placeholder="Email ID">
-                    <input type="text" placeholder="What would you like to discuss?" maxlength="20">
-                    <div class="buttn">
-                        <a class="black-button" type="submit">SUBMIT</a>
-                    </div>
-                </form>
-            </div>
-
-            <script>
-                function getInTouch() {
-                    var touch = document.getElementById('getInTouchId');
-                    if (touch.style.display === 'none') {
-                        touch.style.display = 'block';
-                        touch.style.transition = '1s';
-                    } else {
-                        touch.style.display = 'none';
-                        touch.style.transition = '1s';
-                    }
-                }
-            </script>
         </div>
     </div>
+
+    <script>
+        function getInTouch() {
+            var touch = document.getElementById('getInTouchId');
+            if (touch.style.display === 'none') {
+                touch.style.display = 'block';
+                touch.style.transition = '1s';
+            } else {
+                touch.style.display = 'none';
+                touch.style.transition = '1s';
+            }
+        }
+    </script>
 
     <!-- #################################################################################### -->
         <div class="main-section"></div>
@@ -284,7 +287,7 @@
 
                 <div class="carousel-descrip_t " id="car-2" style='display:block' >
                     <p class="carousel-title">
-                        Meet, Greet & Talk1
+                        Meet, Greet & Talk
                     </p>
                     <p class="carousel-details">
                         From lobbies of the living areas, various seating clusters in & around the project to the corridor spaces, there are various thoughtfully designed ‘pause points’ to incorporate enthusiastic welcomes and lingering goodbyes. Wholesome architectural enhancements for you to meet, greet & talk.
@@ -332,7 +335,6 @@
         <p class="carousel-2-title" id="explore-soultree" data-aos="fade-up" data-aos-delay="200">Explore Soultree</p>
         
         <div class="carousel-2">
-
             <div class="carousel-flex" data-aos="fade-up" data-aos-delay="300">
                 <div class="carousel" id="g1">
                     <ul class="carousel_list" id="g1__list11">
@@ -394,79 +396,11 @@
                 </div>
             </div>
             <div class="color-splash-2">
-                <img src="images/Color-Splash-2.png" alt="">
+                <img src="images/Color-Splash-2.png" alt=".">
             </div>
         </div>
-        <!-- <div class="carousel-2">
 
-            <div class="carousel-flex" data-aos="fade-up" data-aos-delay="300">
-
-                <div class="carousel-descrip_t1 " id="car-2_a" style='display:block' >
-                    <p class="carousel-title">
-                        Feel the light
-                    </p>
-                    <p class="carousel-details">
-                        Our rooms, terraces & balconies are designed to take advantage of the Bangalore sun and bathe in natural light. The homes are compact and smart with good views, light and fresh air. All you need for a productive day and a good night’s sleep.  
-                    </p>
-                </div>
-
-                <div class="carousel-descrip_t1" style="display: none;" id="car-1_a">
-                    <p class="carousel-title">
-                        Feel the design 
-                    </p>
-                    <p class="carousel-details">
-                        A work of art inside and out. At Modern Spaaces, the passion for design transcends architecture and is reflected in the utmost care in the selection of equipment and materials. Form, function and robustness, in perfect harmony. 
-                    </p>
-                </div>
-
-                <div class="carousel-descrip_t1" style="display: none;" id="car0_a">
-                    <p class="carousel-title">
-                        Feel good 
-                    </p>
-                    <p class="carousel-details">
-                        At Soul Tree, quality of life is the absolute priority. Our clubhouse attests to that. The 4000 sq ft clubhouse has a half indoor, partially covered swimming pool for adults and toddlers. It is designed to keep all your needs in mind from a host of indoor games, Badminton & Squash Court to a fully-equipped gym, a Library, Lego Room, Market Retail, ATM, Pharmacy & Laundry. 
-                    </p>
-                </div>
-
-                <div class="carousel-descrip_t1" style="display: none;" id="car1_a">
-                    <p class="carousel-title">
-                        Feel Smart 
-                    </p>
-                    <p class="carousel-details">
-                        Our homes come with fully automated home automation facility. Now control your entire home with just a mobile app. Unlock the future in our smart homes and experience customized, luxury living. 
-                    </p>
-                </div>
-
-                <div class="carousel-descrip_t1" style="display: none;" id="car2_a">
-                    <p class="carousel-title">
-                        Feel green 
-                    </p>
-                    <p class="carousel-details">
-                        We believe in fair & efficient sustainable practices. Being aware of the environment we live in is a decision we’ve made in the design and functionality of the space. We have taken measures to save water, energy, and hopefully the planet, in the long run. 
-                    </p>
-                </div>
-
-                <div class="ellipse"  onclick="fn_arrow(0)">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </div>
-
-                <div class="carousel" id="g1">
-                    <ul class="carousel_list" id="g1__list11">
-                        <img src="images/section3/Feel the light.jpg" alt="" class="carousel_item1" data-pos="-2" id="-2_a" id="-2" onclick="fn22(id)">
-                        <img src="images/section3/Feel the design.png" alt="" class="carousel_item1" data-pos="-1" id="-1_a" onclick="fn22(id)">
-                        <img src="images/section3/Feel good.png" alt="" class="carousel_item1" data-pos="0" id="0_a" onclick="fn22(id)">
-                        <img src="images/section3/Feel Smart.jpg" alt="" class="carousel_item1" data-pos="1" id="1_a" onclick="fn22(id)">
-                        <img src="images/section3/Feel green.png" alt="" class="carousel_item1" data-pos="2" id="2_a" onclick="fn22(id)">
-                    </ul>
-                </div>
-
-            </div>
-            <div class="color-splash-2">
-                <img src="images/Color-Splash-2.png" alt="">
-            </div>
-        </div> -->
-
-        <div class="master-plan content-desktop" id="master-plan">
+        <div class="master-plan content-desktop" id="master-pln">
             <div class="master-plan-img" data-aos="fade-up" data-aos-delay="200">
                 <img src="images/MASTER-PLAN.png">
             </div>
@@ -477,7 +411,7 @@
                     <p class="spec-details">3 Acres</p>
                 </li>
                 <li data-aos="fade-up" data-aos-delay="350">
-                    <p class="specs">BHK Type</p>
+                    <p class="specs">BHK</p>
                     <p class="spec-details">1, 2 & 3</p>
                 </li>
                 <li data-aos="fade-up" data-aos-delay="400">
@@ -491,7 +425,7 @@
             </div>
         </div>
 
-        <div class="master-plan content-mobile" id="master-plan">
+        <div class="master-plan content-mobile" id="master-planM">
             <div class="master-plan-title" data-aos="fade-up" data-aos-delay="200">Master plan</div>
             <div class="master-plan-img" data-aos="fade-up" data-aos-delay="300">
                 <img src="images/MASTER-PLAN.png">
@@ -502,7 +436,7 @@
                     <p class="spec-details">3 Acres</p>
                 </li>
                 <li data-aos="fade-up" data-aos-delay="400">
-                    <p class="specs">BHK Type</p>
+                    <p class="specs">BHK</p>
                     <p class="spec-details">1, 2 & 3</p>
                 </li>
                 <li data-aos="fade-up" data-aos-delay="500">
@@ -530,42 +464,40 @@
 
         <div class="floor-plans">
             <div class="floor-plans-title" data-aos="fade-up" data-aos-delay="200">Floor Plans</div>
-            <div class="plan-specs tab">
-                <div class="spec  active-spec tablinks" id="snty" onclick="serenityFunc(event,'serenity')" data-aos="fade-up" data-aos-delay="300">Serenity</div>
-                <div class="spec tablinks" id="bls" onclick="serenityFunc(event,'bliss')" data-aos="fade-up" data-aos-delay="450">Bliss</div>
-                <div class="spec tablinks" id="nrv" onclick="serenityFunc(event,'nirvana')" data-aos="fade-up" data-aos-delay="600">Nirvana</div>
+            <div class="plan-specs tab" data-aos="fade-up" data-aos-delay="300">
+                <div class="spec  active-spec tablinks" id="snty" onclick="serenityFunc(event,'serenity')">Serenity</div>
+                <div class="spec tablinks" id="bls" onclick="serenityFunc(event,'bliss')">Bliss</div>
+                <div class="spec tablinks" id="nrv" onclick="serenityFunc(event,'nirvana')">Nirvana</div>
             </div>
 
             <div class="planView tabcontent" id="serenity">
                 <div style="display:flex">
                     <div class="selection">
                         <div class="type-selection">
-                            <p data-aos="fade-up" data-aos-delay="650">Type</p>
-                            <div class="click-btn" id="click-btn" data-aos="fade-up" data-aos-delay="700">
-                                <button class="click-btn-1">1</button>
-                                <button class="click-btn-1">2</button>
-                                <button class="click-btn-1 active">3</button>
+                            <p>BHK</p>
+                            <div class="click-btn" id="click-btn">
+                                <button id="serenity1BHK" class="click-btn-1" onclick="serenityFloorFunction(this, id)">1</button>
+                                <button id="serenity2BHK" class="click-btn-1" onclick="serenityFloorFunction(this, id)">2</button>
+                                <button id="serenity3BHK" class="click-btn-1" onclick="serenityFloorFunction(this, id)">3</button>
                             </div>
                         </div>
                 
                         <div class="facing">
-                            <p data-aos="fade-up" data-aos-delay="750">Facing</p>
-                            <div class="box11" data-aos="fade-up" data-aos-delay="800">
-                                <select>
-                                    <option>East</option>
-                                    <option>West</option>
-                                    <option>North</option>
-                                    <option>South</option>
+                            <p>Facing</p>
+                            <div id="serenityFacing" onChange="serenityFaceFunction(this)" class="box11">
+                                <select id="serenitySelectFacing">
+                                    <option value='east'>East</option>
+                                    <option value='west'>West</option>
+                                    <option value='north'>North</option>
                                 </select>
                             </div>
                         </div>
                         <div class="building-blocks">
-                            <p data-aos="fade-up" data-aos-delay="850">Block</p>
-                            <div class="box11" data-aos="fade-up" data-aos-delay="900">
-                                <select>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
+                            <p data-aos="fade-up" data-aos-delay="850">Unit</p>
+                            <div id="serenityBlock" onChange="serenityBlockFunction(this)" class="box11">
+                                <select id="serenitySelectBlock">
+                                    <option value="Typical Unit">Typical Unit</option>
+                                    <option value="Corner Unit">Corner Unit</option>
                                 </select>
                             </div>
                         </div>
@@ -573,12 +505,12 @@
                     <div class="swiper-containerSerenity" id="serenityCarousel" data-aos="fade-up" data-aos-delay="700">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img id="myImg2" class="myImg" src="images/soultreeFloorPlans/1bhk-West-facing-typical-2.png">
+                                <img id="myImg" class="myImg" src="images/soultreeFloorPlans/1bhk-West-facing-typical-2.png">
                                 <p>SBA 568 SFT, CA 357 SFT<br>
                                     Flat No.s  B09, B10, B14</p>
                             </div>
                             <div class="swiper-slide" id="slide3">
-                                <img id="myImg3" class="myImg" src="images/soultreeFloorPlans/1bhk-West-facing-typical.png">
+                                <img id="myImg2" class="myImg" src="images/soultreeFloorPlans/1bhk-West-facing-typical.png">
                                 <p>SBA 568 SFT, CA 357 SFT<br>
                                    Flat No.s  B09, B10, B14</p>
                             </div>
@@ -770,12 +702,11 @@
                 </div>
             </div>
 
-
             <div class="planView tabcontent" id="nirvana">
                 <div style="display:flex">
                     <div class="selection">
                         <div class="type-selection">
-                            <p>Type</p>
+                            <p>BHK</p>
                             <div class="click-btn" id="click-btn">
                                 <button class="click-btn-1">1</button>
                                 <button class="click-btn-1">2</button>
@@ -1088,7 +1019,7 @@
             A perfect location for a perfect home
         </p>
         <p class="location-subtitle" data-aos="fade-up" data-aos-delay="250">
-            Somepura Gate, Sarjapur Road, located in south-east Bangalore, is one of the fastest-growing parts of the city which makes it perfect & favoured property investment destinations. Despite it's close proximity to the IT hubs of the city it still retains the peaceful & serene aspect missing from almost every other part of the city which certainly are heading towards saturation.
+            Sompura Gate, Sarjapur Road, located in south-east Bangalore, is one of the fastest-growing parts of the city which makes it perfect & favoured property investment destinations. Despite it's close proximity to the IT hubs of the city it still retains the peaceful & serene aspect missing from almost every other part of the city which certainly are heading towards saturation.
         </p><br>
         <p class="location-subtitle" data-aos="fade-up" data-aos-delay="300">
             The real estate demand in this location has seen a ten folds increase. Sarjapur Road enjoys robust residential demand and excellent connectivity to the IT hubs & hotspots like Koramangala, Whitefield, HSR, Electronic City, Marathahalli, Silk Board etc. The planned Metro rail extension, Outer Ring Road and the proposed eight-lane Peripheral Ring Road [PRR] which will reduce the travel time to airport considerably are expected to boost the realty sector here.
@@ -1311,6 +1242,7 @@
 
     <!-- Script Links -->
     <script src="js/app.js"></script>
+    <script src="js/floorplans.js"></script>
     <!-- <script src="js/lottie.min.js"></script> -->
 
     <!-- AOS(Animation On Scroll) -->

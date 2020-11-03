@@ -57,7 +57,7 @@ body {
   }
 }
 
-                                  @media only screen and (max-width:768px) {
+                                  @media only screen and (max-width:1000px) {
                                     .landing-img {
                                       position: absolute;
                                       width: 100vw;
@@ -169,7 +169,7 @@ body {
   }
 }
 
-                                                @media only screen and (max-width:768px) {
+                                                @media only screen and (max-width:1000px) {
                                                   
                                                   .lines {
                                                     width: 100%;
@@ -447,7 +447,7 @@ body {
 }
           
 
-                        @media only screen and (max-width:768px) {
+                        @media only screen and (max-width:1000px) {
                             .nav-bar {
                                 position: absolute;
                                 top: 0;
@@ -744,8 +744,8 @@ body {
       }
 
       p {
-        font-size: 1.04vw;
-        font-weight: $fontBold;
+        font-size: 1.8vw;
+        font-weight: 400;
         color: $black;
       }
     }
@@ -756,7 +756,8 @@ body {
       justify-content: center;
       align-items: center;
       font-size: .94vw;
-      font-weight: $fontThin;
+      font-weight: 600;
+      letter-spacing: .5px;
       color: $white-two;
       height: 2.29vw;
       width: 10.63vw;
@@ -816,7 +817,7 @@ body {
   display: block;
 }
 
-                                                        @media only screen and (max-width:768px) {
+                                                        @media only screen and (max-width:1000px) {
                                                           .menu-pages {
                                                             position: -webkit-sticky;
                                                             position: sticky;
@@ -929,7 +930,120 @@ body {
 .landing-container {
   height: 40vw;
   font-family: Titillium Web, sans-serif;
-  background: red;
+
+  .getIn-touch {
+    position: fixed;
+    z-index: 1000;
+    color: $black;
+    font-size: .94vw;
+    font-weight: $fontBold;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    margin-left: 94.3vw;
+    margin-top: 15vw;
+    background-color: $cream;
+    width: 8.85vw;
+    height: 2.6vw;
+    border-radius: .4vw .4vw 0 0;
+    display:-webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .git-container {
+    display: none;
+    margin-top: 13vw;
+    margin-left: 72.2vw;      
+    position: fixed;
+    background:#fff;
+    color: #000;
+    height: 32vw;
+    width: 25vw;
+    z-index: 2000;
+    padding: 2vw;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+
+    svg {
+      width: 1.2vw;
+      height: 1.2vw;
+      margin-left: 20vw;
+      cursor: pointer;
+    }
+
+    svg:hover {
+      color: #9b8e8e;
+    }
+
+    p {
+      font-size: 2.1vw;
+      font-weight: $fontBold;
+    }
+
+    form {
+      margin-top: 2vw;
+      padding-bottom: 1vw;
+
+      input {
+        border: none;
+        padding-bottom: .5vw;
+        width: 100%;
+        -webkit-border-bottom: 1px solid $black;
+        border-bottom: 1px solid $black;
+        font-size: $p;
+        font-weight: $fontThin;
+        margin-bottom: 2.2vw;
+        outline:none;
+      }
+
+      .buttn {
+        height: 3.54vw;
+        width: 12.4vw;
+        background-color: $black;
+        border-radius: 0.26vw;
+        transition: width 500ms;
+        -webkit-transition: width 500ms;
+        // margin-left: 57.6vw;
+        
+        .black-button {
+            border: none;
+            height: 3.54vw;
+            width: 12.4vw;
+            display:-webkit-flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9vw;
+            letter-spacing: 3.44px;
+            border-radius: 0.26vw;
+            font-weight: $fontBold;
+            color: $white-two;
+        }
+      }
+    
+      .buttn:hover {
+        height: 3.54vw;
+        width: 0;
+    
+        .black-button {
+            color: $black;
+        }
+    
+        .black-button::after {
+            content: '\f105';
+            font-family: fontAwesome;
+            font-size: .9vw;
+            font-weight: $fontThin;
+            padding-left: .6vw;
+            color: $black;
+        }
+      }
+    }
+  }
 
   .overlay-content {
     display:-webkit-flex;
@@ -962,126 +1076,126 @@ body {
       font-weight: $fontThin;
       color: $black;
     }
-
-    .getIn-touch {
-      position: fixed;
-      z-index: 1000;
-      color: $black;
-      font-size: .94vw;
-      font-weight: $fontBold;
-      transform: rotate(-90deg);
-      -webkit-transform: rotate(-90deg);
-      -moz-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-      -o-transform: rotate(-90deg);
-      margin-left: 97vw;
-      margin-top: 15vw;
-      background-color: $cream;
-      width: 8.85vw;
-      height: 2.6vw;
-      border-radius: .4vw .4vw 0 0;
-      display:-webkit-flex;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .git-container {
-      display: none;
-      margin-top: 13vw;
-      margin-left: 69.5vw;      
-      position: fixed;
-      background:#fff;
-      color: #000;
-      height: 32vw;
-      width: 25vw;
-      z-index: 2000;
-      padding: 2vw;
-      box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
-
-      svg {
-        width: 1.2vw;
-        height: 1.2vw;
-        margin-left: 20vw;
-        cursor: pointer;
-      }
-
-      svg:hover {
-        color: #9b8e8e;
-      }
-
-      p {
-        font-size: 2.1vw;
-        font-weight: $fontBold;
-      }
-
-      form {
-        padding-bottom: 1vw;
-
-        input {
-          border: none;
-          padding-bottom: .5vw;
-          width: 100%;
-          -webkit-border-bottom: 1px solid $black;
-          border-bottom: 1px solid $black;
-          font-size: $p;
-          font-weight: $fontThin;
-          margin-bottom: 2.2vw;
-          outline:none;
-        }
-
-        .buttn {
-          height: 3.54vw;
-          width: 12.4vw;
-          background-color: $black;
-          border-radius: 0.26vw;
-          transition: width 500ms;
-          -webkit-transition: width 500ms;
-          // margin-left: 57.6vw;
-          
-          .black-button {
-              border: none;
-              height: 3.54vw;
-              width: 12.4vw;
-              display:-webkit-flex;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              font-size: 0.9vw;
-              letter-spacing: 3.44px;
-              border-radius: 0.26vw;
-              font-weight: $fontBold;
-              color: $white-two;
-          }
-        }
-      
-        .buttn:hover {
-          height: 3.54vw;
-          width: 0;
-      
-          .black-button {
-              color: $black;
-          }
-      
-          .black-button::after {
-              content: '\f105';
-              font-family: fontAwesome;
-              font-size: .9vw;
-              font-weight: $fontThin;
-              padding-left: .6vw;
-              color: $black;
-          }
-        }
-      }
-    }
   }
 }
 
-                                                        @media only screen and (max-width:768px) {
+                                                        @media only screen and (max-width:1000px) {
                                                           .landing-container {
                                                             height: 177vw;
-                                                            padding-bottom: 4vw;;
+                                                            padding-bottom: 4vw;
+
+                                                            .getIn-touch {
+                                                              position: fixed;
+                                                              z-index: 1000;
+                                                              color: $black;
+                                                              font-size: 2.5vw;
+                                                              font-weight: $fontBold;
+                                                              transform: rotate(-90deg);
+                                                              -webkit-transform: rotate(-90deg);
+                                                              -moz-transform: rotate(-90deg);
+                                                              -ms-transform: rotate(-90deg);
+                                                              -o-transform: rotate(-90deg);
+                                                              margin-left: 85.5vw;
+                                                              margin-top: 35vw;
+                                                              background-color: $cream;
+                                                              width: 23vw;
+                                                              height: 6vw;
+                                                              border-radius: 1vw 1vw 0 0;
+                                                              display:-webkit-flex;
+                                                              display: flex;
+                                                              justify-content: center;
+                                                              align-items: center;
+                                                            }
+
+                                                            .git-container {
+                                                              display: none;
+                                                              margin-top: 30vw;
+                                                              margin-left: 13.5vw;      
+                                                              position: fixed;
+                                                              background:#fff;
+                                                              color: #000;
+                                                              height: 110vw;
+                                                              width: 80vw;
+                                                              z-index: 1000;
+                                                              padding: 3vw;
+                                                              box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+                                                        
+                                                              svg {
+                                                                width: 4.5vw;
+                                                                height: 4.5vw;
+                                                                margin-left: 70vw;
+                                                              }
+                                                        
+                                                              svg:hover {
+                                                                color: #a5a2a2;
+                                                              }
+                                                        
+                                                              p {
+                                                                font-size: 6.76vw;
+                                                                font-weight: $fontBold;
+                                                              }
+                                                        
+                                                              form {
+                                                                margin-top: 8vw;
+                                                                padding-bottom: 1vw;
+                                                        
+                                                                input {
+                                                                  border: none;
+                                                                  padding-bottom: 2.5vw;
+                                                                  width: 100%;
+                                                                  -webkit-border-bottom: 1px solid $black;
+                                                                  border-bottom: 1px solid $black;
+                                                                  font-size: 3.38vw;
+                                                                  font-weight: $fontThin;
+                                                                  margin-bottom: 5vw;
+                                                                  outline:none;
+                                                                }
+                                                        
+                                                                .buttn {
+                                                                  height: 13.77vw;
+                                                                  width: 45vw;
+                                                                  background-color: $black;
+                                                                  border-radius: 1vw;
+                                                                  transition: none;
+                                                                  margin-left: 0vw;
+                                                                  margin-top: 5vw;
+                                                                  
+                                                                  .black-button {
+                                                                      border: none;
+                                                                      height: 13.77vw;
+                                                                      width: 45vw;
+                                                                      display:-webkit-flex;
+                                                                      display: flex;
+                                                                      justify-content: center;
+                                                                      align-items: center;
+                                                                      font-size: 3.38vw;
+                                                                      letter-spacing: 3.44px;
+                                                                      border-radius: 0.26vw;
+                                                                      font-weight: $fontBold;
+                                                                      color: $white-two;
+                                                                  }
+                                                                }
+                                                              
+                                                                .buttn:hover {
+                                                                  height: 13.77vw;
+                                                                  width: 0;
+                                                              
+                                                                  .black-button {
+                                                                      color: $black;
+                                                                  }
+                                                              
+                                                                  .black-button::after {
+                                                                      content: '\f105';
+                                                                      font-family: fontAwesome;
+                                                                      font-size: 4vw;
+                                                                      font-weight: $fontThin;
+                                                                      padding-left: 2vw;
+                                                                      color: $black;
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+
                                                             .overlay-content {
                                                               .soultree-logo {
                                                                 margin-top: 30vw;
@@ -1101,117 +1215,6 @@ body {
                                                                 margin-top: 53vw;
                                                                 line-height: 1.5;
                                                                 font-size: 3.38vw;
-                                                              }
-                                                          
-                                                              .getIn-touch {
-                                                                position: fixed;
-                                                                z-index: 1000;
-                                                                color: $black;
-                                                                font-size: 2.5vw;
-                                                                font-weight: $fontBold;
-                                                                transform: rotate(-90deg);
-                                                                -webkit-transform: rotate(-90deg);
-                                                                -moz-transform: rotate(-90deg);
-                                                                -ms-transform: rotate(-90deg);
-                                                                -o-transform: rotate(-90deg);
-                                                                margin-left: 95vw;
-                                                                margin-top: 15vw;
-                                                                background-color: $cream;
-                                                                width: 23vw;
-                                                                height: 6vw;
-                                                                border-radius: 1vw 1vw 0 0;
-                                                                display:-webkit-flex;
-                                                                display: flex;
-                                                                justify-content: center;
-                                                                align-items: center;
-                                                              }
-
-                                                              .git-container {
-                                                                display: none;
-                                                                margin-top: 30vw;
-                                                                margin-left: 0vw;      
-                                                                position: fixed;
-                                                                background:#fff;
-                                                                color: #000;
-                                                                height: 100vw;
-                                                                width: 80vw;
-                                                                z-index: 1000;
-                                                                padding: 3vw;
-                                                                box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
-                                                          
-                                                                svg {
-                                                                  width: 4.5vw;
-                                                                  height: 4.5vw;
-                                                                  margin-left: 70vw;
-                                                                }
-                                                          
-                                                                svg:hover {
-                                                                  color: #a5a2a2;
-                                                                }
-                                                          
-                                                                p {
-                                                                  font-size: 6.76vw;
-                                                                  font-weight: $fontBold;
-                                                                }
-                                                          
-                                                                form {
-                                                                  padding-bottom: 1vw;
-                                                          
-                                                                  input {
-                                                                    border: none;
-                                                                    padding-bottom: 2.5vw;
-                                                                    width: 100%;
-                                                                    -webkit-border-bottom: 1px solid $black;
-                                                                    border-bottom: 1px solid $black;
-                                                                    font-size: 3.38vw;
-                                                                    font-weight: $fontThin;
-                                                                    margin-bottom: 5vw;
-                                                                    outline:none;
-                                                                  }
-                                                          
-                                                                  .buttn {
-                                                                    height: 13.77vw;
-                                                                    width: 45vw;
-                                                                    background-color: $black;
-                                                                    border-radius: 1vw;
-                                                                    transition: none;
-                                                                    margin-left: 0vw;
-                                                                    margin-top: 5vw;
-                                                                    
-                                                                    .black-button {
-                                                                        border: none;
-                                                                        height: 13.77vw;
-                                                                        width: 45vw;
-                                                                        display:-webkit-flex;
-                                                                        display: flex;
-                                                                        justify-content: center;
-                                                                        align-items: center;
-                                                                        font-size: 3.38vw;
-                                                                        letter-spacing: 3.44px;
-                                                                        border-radius: 0.26vw;
-                                                                        font-weight: $fontBold;
-                                                                        color: $white-two;
-                                                                    }
-                                                                  }
-                                                                
-                                                                  .buttn:hover {
-                                                                    height: 13.77vw;
-                                                                    width: 0;
-                                                                
-                                                                    .black-button {
-                                                                        color: $black;
-                                                                    }
-                                                                
-                                                                    .black-button::after {
-                                                                        content: '\f105';
-                                                                        font-family: fontAwesome;
-                                                                        font-size: 4vw;
-                                                                        font-weight: $fontThin;
-                                                                        padding-left: 2vw;
-                                                                        color: $black;
-                                                                    }
-                                                                  }
-                                                                }
                                                               }
                                                             }
                                                           }
@@ -1463,10 +1466,11 @@ body {
 
     .color-splash-2 {
       position: absolute;
-      width: 45.26vw;
+      width: 48vw;
       height: 47.19vw;
       margin-top: -3vw;
       margin-left: 52vw;
+      overflow: hidden;
 
       img {
         width: auto;
@@ -1475,18 +1479,22 @@ body {
     }
 
     .carousel-flex{
+      overflow: hidden;
+      width: 100%;
+      height: 50vw;
       z-index: 1;
       position: relative;
       display:-webkit-flex;
       display: flex;
+      flex-wrap: wrap;
       // justify-content: space-between;
       align-items: center;
       margin-left: 14.9vw;
-      margin-top: -3vw;
+      margin-top: -10vw;
 
       .carousel {
         position: absolute;
-        margin-left: 43.5vw;
+        margin-left: 18.7vw;
         order: 3;
         display:-webkit-flex;
         display: flex;
@@ -1625,7 +1633,7 @@ body {
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         background-color: $white-two;
         z-index: 10;
-        margin-top: 15.5vw;
+        margin-top: 14vw;
         margin-left: 3vw;
         color: $black;
         border: none;
@@ -1662,207 +1670,452 @@ body {
     }
   }
 
-  // .carousel-2 {
-  //   display:-webkit-flex;
-  //   display: flex;
-  //   font-family: Titillium Web, sans-serif;
+                                          @media only screen and (max-width: 500px) {
+                                            .main-section {
+                                              height: auto;
+                                              padding-top: 20vw;
+                                            }
+                                            
+                                              .main-title {
+                                                font-size: 6.76vw;
+                                                margin-left: 0vw;
+                                                width: 86vw;
+                                                margin: auto;
+                                                line-height: 1.4;
+                                                margin-bottom: 6vw;
+                                              }
+                                            
+                                              .main-subtitle {
+                                                font-size: 3.38vw;
+                                                line-height: 1.5;
+                                                margin-left: 0vw;
+                                                color: $black;
+                                                width: 86vw;
+                                                margin: auto;
+                                              }
+                                            
+                                              .carousel-1 {
+                                                display:-webkit-flex;
+                                                display: flex;
+                                                padding-bottom: 5vw;
+                                            
+                                                .color-splash-1 {
+                                                  width: 62.32vw;
+                                                  height: 106.52vw;
+                                                  margin-top: -10vw;
+                                                  // margin-left: -22vw;
+                                            
+                                                  img {
+                                                    width: auto;
+                                                    height: 100%;
+                                                  }
+                                                }
+                                            
+                                                .carousel-flex{
+                                                  position: absolute;
+                                                  display: block;
+                                                  // justify-content: space-between;
+                                                  align-items: center;
+                                                  margin-top: 16vw;
+                                                  margin-left: 33vw;
+                                            
+                                                  .carousel {
+                                                    display:-webkit-flex;
+                                                    display: flex;
+                                                    align-items: center;
+                                                  
+                                                    &__list {
+                                                      display:-webkit-flex;
+                                                      display: flex;
+                                                      list-style: none;
+                                                      position: relative;
+                                                      width: 100%;
+                                                      height: 15.625vw;
+                                                      justify-content: center;
+                                                      perspective: 15.625vw;
+                                                    }
+                                                    
+                                                    &__item {
+                                                      display:-webkit-flex;
+                                                      display: flex;
+                                                      align-items: center;
+                                                      justify-content: center;
+                                                      color: #fff;
+                                                      font-size: 0px;
+                                                      width: 86vw;
+                                                      height: 68.12vw;
+                                                      border-radius: 3vw;
+                                                      box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+                                                      position: absolute;
+                                                      transition: all .3s ease-in;
+                                            
+                                                      
+                                                      &:nth-child(1) {
+                                                        width: 51.93vw;
+                                                        height: 68.12vw;
+                                                        border-radius: 3vw;
+                                                      img {
+                                                          width: 100%;
+                                                          height: auto;
+                                                          border-radius: 3vw;
+                                                        }
+                                                      }
+                                                      &:nth-child(2) {
+                                                        width: 51.93vw;
+                                                        height: 68.12vw;
+                                                        border-radius: 3vw;
+                                                          img {
+                                                          width: 100%;
+                                                          height: auto;
+                                                          border-radius: 3vw;
+                                                        }
+                                                      }
+                                                      &:nth-child(3) {
+                                                        width: 51.93vw;
+                                                        height: 68.12vw;
+                                                        border-radius: 3vw;
+                                                  
+                                                          img {
+                                                          width: 100%;
+                                                          height: auto;
+                                                          border-radius: 3vw;
+                                                        }
+                                                      }
+                                                      &:nth-child(4) {
+                                                        width: 51.93vw;
+                                                        height: 68.12vw;
+                                                        border-radius: 3vw;
+                                                          img {
+                                                          width: 100%;
+                                                          height: auto;
+                                                          border-radius: 3vw;
+                                                        }
+                                                      }
+                                                      &:nth-child(5) {
+                                                        width: 51.93vw;
+                                                        height: 68.12vw;
+                                                        border-radius: 3vw;
+                                                          img {
+                                                          width: 100%;
+                                                          height: auto;
+                                                          border-radius: 3vw;
+                                                        }
+                                                      }
+                                                      
+                                                      &[data-pos="0"] {
+                                                        z-index: 5;
+                                                      }
+                                                      
+                                                      &[data-pos="-1"] {
+                                                        opacity: 0;
+                                                        filter: blur(1px) grayscale(100%);
+                                                      }
+                                                  
+                                                      &[data-pos="1"] {
+                                                        opacity: 0.5;
+                                                        filter: blur(1px) grayscale(10%);
+                                                      }
+                                                      
+                                                      &[data-pos="-1"] {
+                                                        transform: translateX(-40%) scale(.9);
+                                                        z-index: 4;
+                                                      }
+                                                      
+                                                      &[data-pos="1"] {
+                                                        transform: translateX(40%) scale(.9);
+                                                        z-index: 4;
+                                                      }
+                                                      
+                                                      &[data-pos="-2"] {
+                                                        opacity: 0;
+                                                        filter: blur(3px) grayscale(100%);
+                                                      }
+                                                      
+                                                      &[data-pos="2"] {
+                                                        opacity: 0.2;
+                                                        filter: blur(3px) grayscale(20%);
+                                                      }
+                                                  
+                                                      &[data-pos="-2"] {
+                                                        transform: translateX(-70%) scale(.8);
+                                                        z-index: 3;
+                                                      }
+                                                      
+                                                      &[data-pos="2"] {
+                                                        transform: translateX(70%) scale(.8);
+                                                        z-index: 3;
+                                                      }
+                                                    }
+                                                  }
+                                            
+                                                  .ellipse {
+                                                    position: absolute;
+                                                    width: 5vw;
+                                                    height: 5vw;
+                                                    border-radius: 50%;
+                                                    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                                                    background-color: $white-two;
+                                                    z-index: 10;
+                                                    margin-top: 15.5vw;
+                                                    margin-left: 55vw;
+                                                    color: $black;
+                                                    transform: scale(2);
+                                                    border: none;
+                                                    outline:none;
+                                                    display:-webkit-flex;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                              
+                                                    i {
+                                                      font-size: 3vw;
+                                                      z-index: 50;
+                                                    }
+                                                  }
+                                            
+                                                  .carousel-descrip_t {
+                                                    position: absolute;
+                                                    width: 82vw;
+                                                    // margin-right: 34vw;
+                                                    margin-left: -26vw;
+                                                    margin-top: 58vw;
+                                                    margin-bottom: 20vw;
+                                              
+                                                    .carousel-title {
+                                                      font-size: 5.31vw;
+                                                      font-weight: $fontBold;
+                                                      margin-bottom: 1.93vw;
+                                                    }
+                                              
+                                                    .carousel-details {
+                                                      font-size: 3.38vw;
+                                                      line-height: 1.5;
+                                                    }
+                                                  }
+                                                }
+                                              }
 
-  //   .carousel-flex{
-  //     position: relative;
-  //     display:-webkit-flex;
-  //     display: flex;
-  //     // justify-content: space-between;
-  //     align-items: center;
+                                              .carousel-2-title {
+                                                font-family: Titillium Web, sans-serif;
+                                                font-size: 6.76vw;
+                                                font-weight: $fontBold;
+                                                margin-left: 0vw;
+                                                width: 86vw;
+                                                margin: auto;
+                                                margin-top: 46vw;
+                                              }
 
-  //     .carousel {
-  //       display:-webkit-flex;
-  //       display: flex;
-  //       align-items: center;
-  //       margin-left: 26vw;
-      
-  //       &__list {
-  //         display:-webkit-flex;
-  //         display: flex;
-  //         list-style: none;
-  //         position: relative;
-  //         width: 100%;
-  //         height: 15.625vw;
-  //         justify-content: center;
-  //         perspective: 15.625vw;
-  //       }
-        
-  //       &__item1 {
-  //         display:-webkit-flex;
-  //         display: flex;
-  //         align-items: center;
-  //         justify-content: center;
-  //         color: #fff;
-  //         font-size: 0px;
-  //         width: 25.8vw;
-  //         height: 33.8vw;
-  //         border-radius: 1vw;
-  //         box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
-  //         position: absolute;
-  //         transition: all .3s ease-in;
+                                              .carousel-2 {
+                                                display:-webkit-flex;
+                                                display: block;
+                                                font-family: Titillium Web, sans-serif;
+                                                height: 145vw;
+                                            
+                                                .carousel-flex{
+                                                  // background: red;
+                                                  margin-left: 0vw;
+                                                  position: relative;
+                                                  display: block;
+                                                  // justify-content: space-between;
+                                                  align-items: center;
+                                                  width: 100%;
+                                                  height: 100%;
+                                                  overflow: visible;
+                                                  overflow-x: hidden;
+                                            
+                                                  .carousel {
+                                                    position: absolute  ;
+                                                    display:-webkit-flex;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    margin-left: 18vw;
+                                                    margin-top: -18vw;
+                                                    
+                                                    &__list {
+                                                      display:-webkit-flex;
+                                                      display: flex;
+                                                      list-style: none;
+                                                      position: relative;
+                                                      width: 100%;
+                                                      height: 15.625vw;
+                                                      justify-content: center;
+                                                      perspective: 15.625vw;
+                                                    }
+                                                    
+                                                    &__item1 {
+                                                      display:-webkit-flex;
+                                                      display: flex;
+                                                      align-items: center;
+                                                      justify-content: center;
+                                                      color: #fff;
+                                                      font-size: 0px;
+                                                      width: 86vw;
+                                                      height: 68.12vw;
+                                                      border-radius: 1vw;
+                                                      box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+                                                      position: absolute;
+                                                      transition: all .3s ease-in;
+                                            
+                                                      &:nth-child(1) {
+                                                        width: 51.93vw;
+                                                        height: 68.12vw;
+                                                        border-radius: 3vw;
+                                                      img {
+                                                          width: 100%;
+                                                          height: auto;
+                                                          border-radius: 3vw;
+                                                        }
+                                                      }
+                                                      &:nth-child(2) {
+                                                        width: 51.93vw;
+                                                        height: 68.12vw;
+                                                        border-radius: 3vw;
+                                                      img {
+                                                          width: 100%;
+                                                          height: auto;
+                                                          border-radius: 3vw;
+                                                        }
+                                                      }
+                                                      &:nth-child(3) {
+                                                        width: 51.93vw;
+                                                        height: 68.12vw;
+                                                        border-radius: 3vw;
+                                                      img {
+                                                          width: 100%;
+                                                          height: auto;
+                                                          border-radius: 3vw;
+                                                        }
+                                                      }
+                                                      &:nth-child(4) {
+                                                        width: 51.93vw;
+                                                        height: 68.12vw;
+                                                        border-radius: 3vw;
+                                                      img {
+                                                          width: 100%;
+                                                          height: auto;
+                                                          border-radius: 3vw;
+                                                        }
+                                                      }
+                                                      &:nth-child(5) {
+                                                        width: 51.93vw;
+                                                        height: 68.12vw;
+                                                        border-radius: 3vw;
+                                                      img {
+                                                          width: 100%;
+                                                          height: auto;
+                                                          border-radius: 3vw;
+                                                        }
+                                                      }
+                                                      
+                                                      &[data-pos="0"] {
+                                                        z-index: 5;
+                                                      }
+                                                      
+                                                      &[data-pos="-1"] {
+                                                        opacity: 0.5;
+                                                        filter: blur(1px) grayscale(100%);
+                                                      }
+                                                  
+                                                      &[data-pos="1"] {
+                                                        opacity: 0;
+                                                        filter: blur(1px) grayscale(10%);
+                                                      }
+                                                      
+                                                      &[data-pos="-1"] {
+                                                        transform: translateX(-40%) scale(.9);
+                                                        z-index: 4;
+                                                      }
+                                                      
+                                                      &[data-pos="1"] {
+                                                        transform: translateX(40%) scale(.9);
+                                                        z-index: 4;
+                                                      }
+                                                      
+                                                      &[data-pos="-2"] {
+                                                        opacity: 0.2;
+                                                        filter: blur(3px) grayscale(100%);
+                                                      }
+                                                      
+                                                      &[data-pos="2"] {
+                                                        opacity: 0;
+                                                        filter: blur(3px) grayscale(20%);
+                                                      }
+                                                  
+                                                      &[data-pos="-2"] {
+                                                        transform: translateX(-70%) scale(.8);
+                                                        z-index: 3;
+                                                      }
+                                                      
+                                                      &[data-pos="2"] {
+                                                        transform: translateX(70%) scale(.8);
+                                                        z-index: 3;
+                                                      }
+                                                    }
+                                                  }
+                                            
+                                                  .ellipse {
+                                                    position: absolute;
+                                                    width: 5vw;
+                                                    height: 5vw;
+                                                    border-radius: 50%;
+                                                    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                                                    background-color: $white-two;
+                                                    z-index: 10;
+                                                    margin-top: 5vw;
+                                                    margin-left: 8vw;
+                                                    color: $black;
+                                                    transform: scale(2);
+                                                    border: none;
+                                                    outline:none;
+                                                    display:-webkit-flex;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                              
+                                                    i {
+                                                      font-size: 3vw;
+                                                      z-index: 50;
+                                                    }
+                                                  }
+                                            
+                                                  .carousel-descrip_t1 {
+                                                    position: absolute;
+                                                    width: 82vw;
+                                                    margin-left: 7vw;
+                                                    margin-top: 90vw;
+                                              
+                                                    .carousel-title {
+                                                      font-size: 5.31vw;
+                                                      font-weight: $fontBold;
+                                                      margin-bottom: 1.93vw;
+                                                    }
+                                              
+                                                    .carousel-details {
+                                                      font-size: 3.38vw;
+                                                      line-height: 1.5;
+                                                    }
+                                                  }
+                                                }
+                                            
+                                                .color-splash-2 {
+                                                  position: absolute;
+                                                  width: 56.28vw;
+                                                  height: 91.30vw;
+                                                  margin-top: -136vw;
+                                                  margin-left: 43.5vw;
+                                                  overflow: hidden;
+                                            
+                                                  img {
+                                                    width: auto;
+                                                    height: 100%;
+                                                  }
+                                                }
+                                              }
+                                          }
 
-          
-  //         &:nth-child(1) {
-  //             width: 25.8vw;
-  //             height: 33.8vw;
-  //             border-radius: 1vw;
-  //         img {
-  //             width: 100%;
-  //             height: auto;
-  //             border-radius: 1vw;
-  //           }
-  //         }
-  //         &:nth-child(2) {
-  //             width: 25.8vw;
-  //                 height: 33.8vw;
-  //                 border-radius: 1vw;
-  //             img {
-  //             width: 100%;
-  //             height: auto;
-  //             border-radius: 1vw;
-  //           }
-  //         }
-  //         &:nth-child(3) {
-  //             width: 25.8vw;
-  //                 height: 33.8vw;
-  //                 border-radius: 1vw;
-      
-  //             img {
-  //             width: 100%;
-  //             height: auto;
-  //             border-radius: 1vw;
-  //           }
-  //         }
-  //         &:nth-child(4) {
-  //             width: 25.8vw;
-  //                 height: 33.8vw;
-  //                 border-radius: 1vw;
-  //             img {
-  //             width: 100%;
-  //             height: auto;
-  //             border-radius: 1vw;
-  //           }
-  //         }
-  //         &:nth-child(5) {
-  //             width: 25.8vw;
-  //                 height: 33.8vw;
-  //                 border-radius: 1vw;
-  //             img {
-  //             width: 100%;
-  //             height: auto;
-  //             border-radius: 1vw;
-  //           }
-  //         }
-          
-          // &[data-pos="0"] {
-          //   z-index: 5;
-          // }
-          
-          // &[data-pos="-1"] {
-          //   opacity: 0.5;
-          //   filter: blur(1px) grayscale(100%);
-          // }
-      
-          // &[data-pos="1"] {
-          //   opacity: 0;
-          //   filter: blur(1px) grayscale(10%);
-          // }
-          
-          // &[data-pos="-1"] {
-          //   transform: translateX(-40%) scale(.9);
-          //   z-index: 4;
-          // }
-          
-          // &[data-pos="1"] {
-          //   transform: translateX(40%) scale(.9);
-          //   z-index: 4;
-          // }
-          
-          // &[data-pos="-2"] {
-          //   opacity: 0.2;
-          //   filter: blur(3px) grayscale(100%);
-          // }
-          
-          // &[data-pos="2"] {
-          //   opacity: 0;
-          //   filter: blur(3px) grayscale(20%);
-          // }
-      
-          // &[data-pos="-2"] {
-          //   transform: translateX(-70%) scale(.8);
-          //   z-index: 3;
-          // }
-          
-          // &[data-pos="2"] {
-          //   transform: translateX(70%) scale(.8);
-          //   z-index: 3;
-          // }
-  //       }
-  //     }
-
-  //     .ellipse {
-  //       display:-webkit-flex;
-  //       display: flex;
-  //       justify-content: center;
-  //       align-items: center;
-  //       position: absolute;
-  //       width: 5vw;
-  //       height: 5vw;
-  //       border-radius: 50%;
-  //       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  //       background-color: $white-two;
-  //       z-index: 10;
-  //       margin-top: 18vw;
-  //       margin-left: 45.3vw;
-  //       color: $black;
-  //       border: none;
-  //       outline:none;
   
-  //       i {
-  //         font-size: 3vw;
-  //         z-index: 50;
-  //       }
-  //     }
 
-  //     .carousel-descrip_t1 {
-  //       position: absolute;
-  //       width: 27.24vw;
-  //       margin-left: 14.9vw;
-  //       margin-top: 8vw;
-  
-  //       .carousel-title {
-  //         font-size: 2.34vw;
-  //         font-weight: $fontBold;
-  //         margin-bottom: 1.93vw;
-  //       }
-  
-  //       .carousel-details {
-  //         font-size: 1.2vw;
-  //         line-height: 1.43;
-  //       }
-  //     }
-  //   }
-
-    // .color-splash-2 {
-    //   position: absolute;
-    //   width: 45.26vw;
-    //   height: 47.19vw;
-    //   margin-top: -7vw;
-    //   margin-left: 52vw;
-
-    //   img {
-    //     width: auto;
-    //     height: 100%;
-    //   }
-    // }
-  // }
-
-
-                                                              @media only screen and (max-width:768px) {
+                                                              @media only screen and (max-width:1000px) {
                                                                 .main-section {
                                                                   height: auto;
                                                                   padding-top: 20vw;
@@ -2099,23 +2352,29 @@ body {
 
                                                                   .carousel-2 {
                                                                     display:-webkit-flex;
-                                                                    display: flex;
+                                                                    display: block;
                                                                     font-family: Titillium Web, sans-serif;
-                                                                    height: 134vw;
-                                                                    overflow: hidden;
+                                                                    height: 145vw;
                                                                 
                                                                     .carousel-flex{
+                                                                      // background: red;
+                                                                      margin-left: 0vw;
                                                                       position: relative;
                                                                       display: block;
                                                                       // justify-content: space-between;
                                                                       align-items: center;
+                                                                      width: 100%;
+                                                                      height: 100%;
+                                                                      overflow: visible;
+                                                                      overflow-x: hidden;
                                                                 
                                                                       .carousel {
+                                                                        position: absolute  ;
                                                                         display:-webkit-flex;
                                                                         display: flex;
                                                                         align-items: center;
-                                                                        margin-left: 14vw;
-                                                                        margin-top: -18vw;
+                                                                        margin-left: 18vw;
+                                                                        // margin-top: -24vw;
                                                                         
                                                                         &__list {
                                                                           display:-webkit-flex;
@@ -2240,15 +2499,15 @@ body {
                                                                       }
                                                                 
                                                                       .ellipse {
-                                                                        position: relative;
+                                                                        position: absolute;
                                                                         width: 5vw;
                                                                         height: 5vw;
                                                                         border-radius: 50%;
                                                                         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
                                                                         background-color: $white-two;
                                                                         z-index: 10;
-                                                                        margin-top: 43vw;
-                                                                        margin-left: -8vw;
+                                                                        margin-top: 50.5vw;
+                                                                        margin-left: 8vw;
                                                                         color: $black;
                                                                         transform: scale(2);
                                                                         border: none;
@@ -2265,10 +2524,10 @@ body {
                                                                       }
                                                                 
                                                                       .carousel-descrip_t1 {
-                                                                        position: relative;
+                                                                        position: absolute;
                                                                         width: 82vw;
-                                                                        margin-left: -7vw;
-                                                                        margin-top: 37vw;
+                                                                        margin-left: 7vw;
+                                                                        margin-top: 90vw;
                                                                   
                                                                         .carousel-title {
                                                                           font-size: 5.31vw;
@@ -2284,10 +2543,12 @@ body {
                                                                     }
                                                                 
                                                                     .color-splash-2 {
+                                                                      position: absolute;
                                                                       width: 56.28vw;
                                                                       height: 91.30vw;
-                                                                      margin-top: 2vw;
-                                                                      margin-left: -60vw;
+                                                                      margin-top: -136vw;
+                                                                      margin-left: 43.5vw;
+                                                                      overflow: hidden;
                                                                 
                                                                       img {
                                                                         width: auto;
@@ -2304,7 +2565,7 @@ body {
     display: flex;
     // padding-left: 14.9vw;
     padding-left: 13.91vw;
-    margin-top: 12vw;
+    margin-top: 6vw;
 
     .master-plan-img {
       width: 32.66vw;
@@ -2344,7 +2605,7 @@ body {
     }
   }
 
-                                                    @media only screen and (max-width:768px) {
+                                                    @media only screen and (max-width:1000px) {
                                                       .master-plan {
                                                         font-family: Titillium Web, sans-serif;
                                                         display: block;
@@ -3000,7 +3261,7 @@ body {
   }
 
 
-                                                    @media only screen and (max-width:768px) {
+                                                    @media only screen and (max-width:1000px) {
                                                       .floor-plans {
                                                         font-family: Titillium Web, sans-serif;
                                                         // height: 55vw;
@@ -3629,7 +3890,7 @@ body {
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 5000; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -3683,15 +3944,14 @@ body {
   /* The Close Button */
   .close {
     position: absolute;
-    top: 4vw;
-    right: 4vw;
-    background-color: white;
-    color: $black;
-    padding: 1.5vw 2.8vw;
-    border-radius: 1vw;
-    font-size: 0vw;
+    top: 5vw;
+    right: 5vw;
+    // background-color: white;
+    color: $white-two;
+    border-radius: 5vw;
+    font-size: 10vw;
     font-weight: $fontBold;
-    transition: 0.3s;
+    // transition: 0.3s;
   }
   
   .close:hover,
@@ -3914,7 +4174,7 @@ body {
   }
 
   .gallery-view {
-    width: 77vw;
+    width: 76.5vw;
     height: 44vw;
     margin: auto;
     border-radius: 1.56vw;
@@ -3942,7 +4202,7 @@ body {
         z-index: 10;
         margin: auto;
         background-color: #fff;
-        margin-top: -1.77vw;
+        margin-top: -2.5vw;
         margin-left: 34.96vw;
         border-radius: 2.08vw;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -4029,10 +4289,10 @@ body {
   }
 }
 
-                                                    @media only screen and (max-width:768px) {
+                                                    @media only screen and (max-width:1000px) {
                                                       .gallery {
                                                         position: relative;
-                                                        padding-top: 12vw;
+                                                        padding-top: 8vw;
                                                         padding-bottom: 24vw;
                                                         background-color: $white-two;
                                                         color: $black;
@@ -4076,7 +4336,7 @@ body {
                                                           display:-webkit-flex;
                                                           display: flex;
                                                           justify-content: center;
-                                                          width: 86vw;
+                                                          width: 85.5vw;
                                                           height: 48.8vw;
                                                           margin: auto;
                                                           border-radius: 1.56vw;
@@ -4107,7 +4367,7 @@ body {
                                                               z-index: 10;
                                                               margin: auto;
                                                               background-color: #fff;
-                                                              margin-top: -1.77vw;
+                                                              margin-top: -2.5vw;
                                                               margin-left: 39.46vw;
                                                               border-radius: 2.08vw;
                                                               box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -4401,14 +4661,14 @@ body {
 }
 
 
-                                                                @media only screen and (max-width:768px) {
+                                                                @media only screen and (max-width:1000px) {
                                                                   .amenities {
                                                                     position: relative;
                                                                     // margin-top: 10.3vw;
                                                                     padding-top: 14vw;
                                                                     padding-bottom: 18vw;
-                                                                    margin-bottom: 10vw;
-                                                                    height: 170vw;
+                                                                    // margin-bottom: 10vw;
+                                                                    height: 190vw;
                                                                     font-family: Titillium Web, sans-serif;
                                                                     background-color: $cream;
                                                                     z-index: 200;
@@ -4431,7 +4691,7 @@ body {
                                                                         display: block;
                                                                         // justify-content: space-between;
                                                                         align-items: center;
-                                                                        margin-top: 16vw;
+                                                                        margin-top: 10vw;
                                                                         margin-left: 33vw;
                                                                   
                                                                         #g2_c {
@@ -4640,12 +4900,8 @@ body {
       border-radius: 0.26vw;
       -webkit-transition: width 500ms;
       transition: width 500ms;
-      -webkit-transition: width 500ms;
       
       .black-button {
-          border: none;
-          height: 3.54vw;
-          width: 12.4vw;
           display:-webkit-flex;
           display: flex;
           justify-content: center;
@@ -4655,6 +4911,9 @@ body {
           border-radius: 0.26vw;
           font-weight: $fontBold;
           color: $cream;
+          height: 3.54vw;
+          width: 12.4vw;
+          border: none;
       }
     }
   
@@ -4678,7 +4937,7 @@ body {
   }
 }
 
-                                                    @media only screen and(max-width:768px) {
+                                                    @media only screen and(max-width:1000px) {
                                                       .specBrand {
                                                         font-family: Titillium Web, sans-serif;
                                                         // width: 100vw;
@@ -4829,7 +5088,7 @@ body {
   }
 }
 
-                                            @media only screen and(max-width:768px) {
+                                            @media only screen and(max-width:1000px) {
                                               .location-section {
                                                 font-family: Titillium Web, sans-serif;
                                                 background-color: #f8f8f8;
@@ -5094,7 +5353,7 @@ body {
   }
 }
 
-                                                    @media only screen and(max-width:768px) {
+                                                    @media only screen and(max-width:1000px) {
                                                       .contact {
                                                         padding-top: 20vw;
                                                         padding-bottom: 5vw;
@@ -5256,7 +5515,7 @@ body {
 }
 
 
-                                                @media only screen and(max-width:768px) {
+                                                @media only screen and(max-width:1000px) {
 
                                                   .schedule {
                                                     height: 19.64vw;
@@ -5400,7 +5659,7 @@ body {
 }
 
 
-                      @media only screen and (max-width:768px) {
+                      @media only screen and (max-width:1000px) {
                           .footer {
                               height: 217.6vw;
                               background-color: $black;
@@ -5478,7 +5737,7 @@ box-shadow: 10px 14px 120px -2px rgba(0,0,0,0.75);
   }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1000px) {
 
   .content-desktop {
       display: none;
@@ -5625,7 +5884,7 @@ box-shadow: 10px 14px 120px -2px rgba(0,0,0,0.75);
   }
 }
 
-                                                    @media only screen and (max-width:768px) {
+                                                    @media only screen and (max-width:1000px) {
                                                       #g1 {
                                                         display:-webkit-flex;
                                                         display: flex;

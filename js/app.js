@@ -5,20 +5,20 @@ function scrollFunction() {
   if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
     document.getElementById("navbar").style.marginTop = "-4.84vw";
     document.getElementById("navbar2").style.marginTop = "-4.84vw";
-    document.getElementById("dropdown-content").style.marginTop = "4.84vw";
+    // document.getElementById("dropdown-content").style.marginTop = "4.84vw";
     document.getElementById("navbarM").style.marginTop = "-18vw";
     document.getElementById("navbar2M").style.marginTop = "-18vw";
-    document.getElementById("dropdown-contentM").style.marginTop = "18vw";
-    document.getElementById("getInTouchId").style.marginTop = "26vw";
+    // document.getElementById("dropdown-contentM").style.marginTop = "18vw";
+    document.getElementById("getInTouchId").style.marginTop = "16vw";
   }
    else {
     document.getElementById("navbar").style.marginTop = "0";
     document.getElementById("navbar2").style.marginTop = "4.84vw";
-    document.getElementById("dropdown-content").style.marginTop = "0vw";
+    // document.getElementById("dropdown-content").style.marginTop = "0vw";
     document.getElementById("navbarM").style.marginTop = "0";
     document.getElementById("navbar2M").style.marginTop = "18vw";
-    document.getElementById("dropdown-contentM").style.marginTop = "0vw";
-    document.getElementById("getInTouchId").style.marginTop = "10vw";
+    // document.getElementById("dropdown-contentM").style.marginTop = "0vw";
+    document.getElementById("getInTouchId").style.marginTop = "5vw";
   }
 }
 
@@ -338,183 +338,3 @@ function serenityFunc(evt,blocks) {
 document.getElementById(blocks).className = "planView tabcontent";
   evt.currentTarget.className += " active-spec";
 }
-
-        // function serenityFunc() {
-        //     var a = document.getElementById('serenity');
-        //     var b = document.getElementById('bliss');
-        //     var c = document.getElementById('nirvana');   
-        //     var d = document.getElementById('snty');   
-        //     var e = document.getElementById('bls');   
-        //     var f = document.getElementById('nrv');   
-        //     if (a.style.display === 'none') {
-        //         a.style.display = 'flex';
-        //         b.style.display = 'none';
-        //         c.style.display = 'none';
-        //         d.classList.add('active-spec')
-        //         e.classList.remove('active-spec');
-        //         f.classList.remove('active-spec');
-        //     }
-        // }
-
-        // function blissFunc() {
-        //     var a = document.getElementById('serenity');
-        //     var b = document.getElementById('bliss');
-        //     var c = document.getElementById('nirvana'); 
-        //     var d = document.getElementById('snty');   
-        //     var e = document.getElementById('bls');   
-        //     var f = document.getElementById('nrv');     
-        //     if (b.style.display === 'none') {
-        //         a.style.display = 'none';
-        //         b.style.display = 'flex';
-        //         c.style.display = 'none';
-        //         d.classList.remove('active-spec')
-        //         e.classList.add('active-spec');
-        //         f.classList.remove('active-spec');
-        //     }
-        // }
-
-        // function nirvanaFunc() {
-        //     var a = document.getElementById('serenity');
-        //     var b = document.getElementById('bliss');
-        //     var c = document.getElementById('nirvana');  
-        //     var d = document.getElementById('snty');   
-        //     var e = document.getElementById('bls');   
-        //     var f = document.getElementById('nrv');    
-        //     if (c.style.display === 'none') {
-        //         a.style.display = 'none';
-        //         b.style.display = 'none';
-        //         c.style.display = 'flex';
-        //         d.classList.remove('active-spec')
-        //         e.classList.remove('active-spec');
-        //         f.classList.add('active-spec');
-        //     }
-        // }
-
-
-
-// Explore Soultree Starts ################################################
-// function fn22(id) 
-// {
-   
-//     var id_1 = "car"+id;
-  
-//     var i, tabcontent, tablinks;
-//     tabcontent = document.getElementsByClassName("carousel-descrip_t1");
-   
-//     for (i = 0; i < tabcontent.length; i++) {
-//         tabcontent[i].style.display = "none";
-//     }
-   
-//     document.getElementById(id_1).style.display = "block";
-//     evt.currentTarget.className += " active";
-// }
-
-
-
-// const state1 = {};
-// const carouselList1 = document.querySelector('.carousel_list');
-// const carouselItems1 = document.querySelectorAll('.carousel_item1');
-// const elems1 = Array.from(carouselItems1);
-
-// carouselList1.addEventListener('click', function (event) {
-// var newActive1 = event.target;
-// var isItem1 = newActive1.closest('.carousel_item1');
-
-// if (!isItem1 || newActive1.classList.contains('carousel_item1_active1')) {
-// return;
-// };
-
-// update1(newActive1);
-// });
-
-// const update1 = function(newActive1) {
-// const newActivePos1 = newActive1.dataset.pos;
-
-// const current1 = elems1.find((elem) => elem.dataset.pos == -2);
-// const prev1 = elems1.find((elem) => elem.dataset.pos == -1);
-// const next1 = elems1.find((elem) => elem.dataset.pos == 0);
-// const first1 = elems1.find((elem) => elem.dataset.pos == 1);
-// const last1 = elems1.find((elem) => elem.dataset.pos == 2);
-
-// current1.classList.remove('carousel_item1_active1');
-
-// [current1, prev1, next1, first1, last1].forEach(item => {
-// var itemPos1 = item.dataset.pos;
-
-// item.dataset.pos = getPos1(itemPos1, newActivePos1)
-// });
-// };
-
-// const getPos1 = function (current1, active1) {
-// const diff1 = current1 - active1;
-
-// if (Math.abs(current1 - active1) > 2) {
-// return -current1
-// }
-
-// return diff1;
-// }
-// Explore Soultree Ends
-
-// Amenities Carousel Starts #############################################################
-// function fn_33(id) 
-//         {
-           
-//             var id_1 = "car"+id;
-          
-//             var i, tabcontent, tablinks;
-//             tabcontent = document.getElementsByClassName("carousel-descrip_tb");
-          
-//             for (i = 0; i < tabcontent.length; i++) {
-//                 tabcontent[i].style.display = "none";
-//             }
-           
-//             document.getElementById(id_1).style.display = "block";
-            
-//         }
-
-
-// const state2 = {};
-// const carouselList2 = document.querySelector('.carousel_list2');
-// const carouselItems2 = document.querySelectorAll('.carousel_item2');
-// const elems2 = Array.from(carouselItems2);
-
-// carouselList2.addEventListener('click', function (event) {
-//   var newActive2 = event.target;
-//   var isItem2 = newActive2.closest('.carousel_item2');
-
-//   if (!isItem2 || newActive2.classList.contains('.carousel_item2_active2')) {
-//     return;
-//   };
-  
-//   update2(newActive2);
-// });
-
-// const update2 = function(newActive2) {
-//   const newActivePos2 = newActive2.dataset.pos;
-
-//   const current2 = elems2.find((elem) => elem.dataset.pos == -2);
-//   const prev2 = elems2.find((elem) => elem.dataset.pos == -1);
-//   const next2 = elems2.find((elem) => elem.dataset.pos == 0);
-//   const first2 = elems2.find((elem) => elem.dataset.pos == 1);
-//   const last2 = elems2.find((elem) => elem.dataset.pos == 2);
-  
-//   current2.classList.remove('.carousel_item2_active2');
-  
-//   [current2, prev2, next2, first2, last2].forEach(item => {
-//     var itemPos2 = item.dataset.pos;
-
-//     item.dataset.pos = getPos2(itemPos2, newActivePos2)
-//   });
-// };
-
-// const getPos2 = function (current2, active2) {
-//   const diff2 = current2 - active2;
-
-//   if (Math.abs(current2 - active2) > 2) {
-//     return -current2
-//   }
-
-//   return diff2;
-// }
-// Amenities Carousel Ends
