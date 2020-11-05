@@ -69,6 +69,7 @@ body {
 }
 
 .modal-container .flex-div p {
+  margin-top: 3vw;
   font-size: 2.1vw;
   font-weight: 600;
 }
@@ -144,6 +145,12 @@ body {
   padding: .5vw 1vw;
   background: #000000;
   text-align: center;
+  cursor: pointer;
+}
+
+.modal-container .flex-div .download:hover {
+  background-color: #e8e3db;
+  color: #000000;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -178,12 +185,13 @@ body {
   .modal-container .flex-div span {
     position: absolute;
     cursor: pointer;
-    margin-left: 20vw;
+    margin-left: 72vw;
     margin-top: -2vw;
     color: #000000;
-    font-size: 3vw;
+    font-size: 10vw;
   }
   .modal-container .flex-div p {
+    margin-top: 12vw;
     font-size: 6.76vw;
     font-weight: 600;
   }
@@ -197,7 +205,7 @@ body {
     width: 100%;
     -webkit-border-bottom: 1px solid #000000;
     border-bottom: 1px solid #000000;
-    font-size: 3.38;
+    font-size: 3.38vw;
     font-weight: 300;
     margin-bottom: 5vw;
     outline: none;

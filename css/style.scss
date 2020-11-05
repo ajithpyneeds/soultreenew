@@ -93,6 +93,7 @@ body {
     }
   
     p {
+      margin-top: 3vw;
       font-size: 2.1vw;
       font-weight: $fontBold;
     }
@@ -165,6 +166,12 @@ body {
       padding: .5vw 1vw;
       background: $black;
       text-align: center;
+      cursor: pointer;
+    }
+
+    .download:hover {
+      background-color: $cream;
+      color: $black;
     }
   }
 }
@@ -195,13 +202,14 @@ body {
                                                   span { 
                                                     position: absolute;
                                                     cursor: pointer;
-                                                    margin-left: 20vw;
+                                                    margin-left: 72vw;
                                                     margin-top: -2vw;
                                                     color: $black;
-                                                    font-size: 3vw;
+                                                    font-size: 10vw;
                                                   }
                                                 
                                                   p {
+                                                    margin-top: 12vw;
                                                     font-size: 6.76vw;
                                                     font-weight: $fontBold;
                                                   }
@@ -216,7 +224,7 @@ body {
                                                       width: 100%;
                                                       -webkit-border-bottom: 1px solid $black;
                                                       border-bottom: 1px solid $black;
-                                                      font-size: 3.38;
+                                                      font-size: 3.38vw;
                                                       font-weight: $fontThin;
                                                       margin-bottom: 5vw;
                                                       outline:none;
