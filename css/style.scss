@@ -5154,64 +5154,130 @@ body {
 .specBrand {
   font-family: Titillium Web, sans-serif;
   width: 100vw;
-  height: 17.66vw;
+  height: auto;
   background-color: $cream;
-  display:-webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  p {
-    width: 100%;
-    margin-left: 21.77vw;
-    font-size: 1.56vw;
-    font-weight: $fontBold;
-    letter-spacing: 5.16px;
-    color: $black;
-  }
+  .specMain {
+    width: 100vw;
+    height: 17.66vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  .btnFlex {
-    width: 100%;
-
-    .buttn {
-      height: 3.54vw;
-      width: 12.4vw;
-      background-color: $black;
-      border-radius: 0.26vw;
-      -webkit-transition: width 500ms;
-      transition: width 500ms;
-      
-      .black-button {
-          display:-webkit-flex;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 0.9vw;
-          letter-spacing: 3.44px;
-          border-radius: 0.26vw;
-          font-weight: $fontBold;
-          color: $cream;
-          height: 3.54vw;
-          width: 12.4vw;
-          border: none;
-      }
+    p {
+      width: 100%;
+      margin-left: 21.77vw;
+      font-size: 1.56vw;
+      font-weight: $fontBold;
+      letter-spacing: 5.16px;
+      color: $black;
     }
   
-    .buttn:hover {
-      height: 3.54vw;
-      width: 0;
+    .btnFlex {
+      width: 100%;
   
-      .black-button {
-          color: $black;
+      .buttn {
+        height: 3.54vw;
+        width: 12.4vw;
+        background-color: $black;
+        border-radius: 0.26vw;
+        -webkit-transition: width 500ms;
+        transition: width 500ms;
+        
+        .black-button {
+            display:-webkit-flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9vw;
+            letter-spacing: 3.44px;
+            border-radius: 0.26vw;
+            font-weight: $fontBold;
+            color: $cream;
+            height: 3.54vw;
+            width: 12.4vw;
+            border: none;
+        }
       }
+    
+      .buttn:hover {
+        height: 3.54vw;
+        width: 0;
+    
+        .black-button {
+            color: $black;
+        }
+    
+        .black-button::after {
+            content: '\f107';
+            font-family: fontAwesome;
+            font-size: .9vw;
+            font-weight: $fontThin;
+            padding-left: .6vw;
+            color: $black;
+        }
+      }
+    }
+  }
+ 
+  .specsBrands {
+    display: block;
+
+    .specLists {
+      width: 80vw;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      ul {
+        display: block;
+        flex-wrap: wrap;
+
+        li {
+          margin-bottom: 1.8vw;
+          width: 18vw;
   
-      .black-button::after {
-          content: '\f105';
-          font-family: fontAwesome;
-          font-size: .9vw;
-          font-weight: $fontThin;
-          padding-left: .6vw;
-          color: $black;
+          h6 {
+            font-size: 1.4vw;
+            font-weight: $fontBold;
+            margin-bottom: .4vw;
+          }
+          
+          p {
+            font-size: 1.2vw;
+            font-weight: $fontThin;
+            padding-bottom: .2vw;
+          }
+        }
+      }
+    }
+  }
+
+  .specCards {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+
+    .sCard {
+      padding: 2vw 2vw 8vw 2vw;
+      width: 30vw;
+
+      h4 {
+        font-size: 1.4vw;
+        font-weight: $fontBold;
+        margin-bottom: 1.5vw;
+      }
+
+      h6 {
+        font-size: 1.2vw;
+        font-weight: $fontBold;
+        margin-bottom: .4vw;
+      }
+
+      p {
+        font-size: 1.2vw;
+        font-weight: $fontThin;
       }
     }
   }

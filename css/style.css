@@ -5580,8 +5580,13 @@ body {
 .specBrand {
   font-family: Titillium Web, sans-serif;
   width: 100vw;
-  height: 17.66vw;
+  height: auto;
   background-color: #e8e3db;
+}
+
+.specBrand .specMain {
+  width: 100vw;
+  height: 17.66vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5593,7 +5598,7 @@ body {
           align-items: center;
 }
 
-.specBrand p {
+.specBrand .specMain p {
   width: 100%;
   margin-left: 21.77vw;
   font-size: 1.56vw;
@@ -5602,11 +5607,11 @@ body {
   color: #000000;
 }
 
-.specBrand .btnFlex {
+.specBrand .specMain .btnFlex {
   width: 100%;
 }
 
-.specBrand .btnFlex .buttn {
+.specBrand .specMain .btnFlex .buttn {
   height: 3.54vw;
   width: 12.4vw;
   background-color: #000000;
@@ -5615,7 +5620,7 @@ body {
   transition: width 500ms;
 }
 
-.specBrand .btnFlex .buttn .black-button {
+.specBrand .specMain .btnFlex .buttn .black-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5635,22 +5640,92 @@ body {
   border: none;
 }
 
-.specBrand .btnFlex .buttn:hover {
+.specBrand .specMain .btnFlex .buttn:hover {
   height: 3.54vw;
   width: 0;
 }
 
-.specBrand .btnFlex .buttn:hover .black-button {
+.specBrand .specMain .btnFlex .buttn:hover .black-button {
   color: #000000;
 }
 
-.specBrand .btnFlex .buttn:hover .black-button::after {
-  content: '\f105';
+.specBrand .specMain .btnFlex .buttn:hover .black-button::after {
+  content: '\f107';
   font-family: fontAwesome;
   font-size: .9vw;
   font-weight: 300;
   padding-left: .6vw;
   color: #000000;
+}
+
+.specBrand .specsBrands {
+  display: block;
+}
+
+.specBrand .specsBrands .specLists {
+  width: 80vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.specBrand .specsBrands .specLists ul {
+  display: block;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.specBrand .specsBrands .specLists ul li {
+  margin-bottom: 1.8vw;
+  width: 18vw;
+}
+
+.specBrand .specsBrands .specLists ul li h6 {
+  font-size: 1.4vw;
+  font-weight: 600;
+  margin-bottom: .4vw;
+}
+
+.specBrand .specsBrands .specLists ul li p {
+  font-size: 1.2vw;
+  font-weight: 300;
+  padding-bottom: .2vw;
+}
+
+.specBrand .specCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+  margin: auto;
+}
+
+.specBrand .specCards .sCard {
+  padding: 2vw 2vw 8vw 2vw;
+  width: 30vw;
+}
+
+.specBrand .specCards .sCard h4 {
+  font-size: 1.4vw;
+  font-weight: 600;
+  margin-bottom: 1.5vw;
+}
+
+.specBrand .specCards .sCard h6 {
+  font-size: 1.2vw;
+  font-weight: 600;
+  margin-bottom: .4vw;
+}
+
+.specBrand .specCards .sCard p {
+  font-size: 1.2vw;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 1000px) {
