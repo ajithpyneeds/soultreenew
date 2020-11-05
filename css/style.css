@@ -2005,7 +2005,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 14.9vw;
-  margin-top: -10vw;
+  margin-top: -13vw;
 }
 
 .carousel-2 .carousel-flex .carousel {
@@ -2183,7 +2183,7 @@ body {
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
   z-index: 10;
-  margin-top: 5vw;
+  margin-top: 14vw;
   margin-left: 2.5vw;
   color: #000000;
   border: none;
@@ -2210,7 +2210,7 @@ body {
           order: 1;
   position: relative;
   width: 27.24vw;
-  margin-top: 6vw;
+  margin-top: 12vw;
 }
 
 .carousel-2 .carousel-flex .carousel-descrip_t1 .carousel-title {
