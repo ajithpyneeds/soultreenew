@@ -2148,14 +2148,14 @@ body {
                                                 margin-left: 0vw;
                                                 width: 86vw;
                                                 margin: auto;
-                                                margin-top: 46vw;
+                                                margin-top: 50vw;
                                               }
 
                                               .carousel-2 {
                                                 display:-webkit-flex;
                                                 display: block;
                                                 font-family: Titillium Web, sans-serif;
-                                                height: 145vw;
+                                                // height: 145vw;
                                             
                                                 .carousel-flex{
                                                   // background: red;
@@ -5232,6 +5232,13 @@ body {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      background-color: $white-two;
+      background-image: linear-gradient(to bottom left, $white-two, $cream);
+      padding: 2vw 2vw 1vw 2vw;
+      margin-bottom: 2vw;
+      // border: 1px solid $black;
+      border-radius: 2vw;
+      box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
 
       ul {
         display: block;
@@ -5259,17 +5266,28 @@ body {
 
   .specCards {
     display: flex;
+    justify-content: space-between;
     width: 90vw;
     margin: auto;
+    padding-bottom: 8vw;
 
     .sCard {
-      padding: 2vw 2vw 8vw 2vw;
-      width: 30vw;
+      // background-image: url(/images/Color-Splash-1.png);
+      background-image: linear-gradient(to bottom left, $white-two, $cream);
+      padding: 2vw 2vw 2vw 2vw;
+      width: 28vw;
+      border-radius: 2vw;
+      background-color: $white-two;
+      box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
 
       h4 {
         font-size: 1.4vw;
         font-weight: $fontBold;
         margin-bottom: 1.5vw;
+
+        span {
+          font-size: .9vw;
+        }
       }
 
       h6 {
@@ -5289,51 +5307,162 @@ body {
                                                     @media only screen and(max-width:1000px) {
                                                       .specBrand {
                                                         font-family: Titillium Web, sans-serif;
-                                                        // width: 100vw;
-                                                        height: 102vw;
-                                                        // margin: auto;
+                                                        height: auto;
                                                         background-color: $cream;
                                                         display:-webkit-flex;
-                                                        display: flex;
-                                                        justify-content: center;
-                                                        align-items: center;
-                                                      
-                                                        p {
-                                                          margin-left: 0;
-                                                          text-align: center;
-                                                          width: 86vw;
+                                                        display: block;
+
+                                                        .specMain {
+                                                          width: 60vw;
+                                                          height: 102vw;
                                                           margin: auto;
-                                                          font-size: 3.38vw;
-                                                          font-weight: $fontBold;
-                                                          letter-spacing: 2.41px;
-                                                          color: $black;
-                                                          padding-top: 37.9vw;
-                                                          padding-bottom: 13.04vw;
-                                                        }
-                                                      
-                                                          .buttn {
-                                                            height: 13.77vw;
-                                                            width: 45vw;
-                                                            background-color: $black;
-                                                            border-radius: 1vw;
-                                                            transition: none;
+                                                          display: block;
+                                                          // flex-direction: column;
+                                                          // justify-content: center;
+                                                          // align-items: center;
+
+                                                          p {
+                                                            margin-left: 0;
+                                                            text-align: center;
+                                                            margin: auto;
+                                                            font-size: 3.38vw;
+                                                            font-weight: $fontBold;
+                                                            letter-spacing: 2.41px;
+                                                            color: $black;
+                                                            padding: 35vw 0 10vw 0;
+                                                          }
+
+                                                          .btnFlex {
+                                                            width: 100%;
                                                             margin: auto;
                                                             
-                                                            .black-button {
-                                                                border: none;
-                                                                height: 13.77vw;
-                                                                width: 45vw;
-                                                                display:-webkit-flex;
-                                                                display: flex;
-                                                                justify-content: center;
-                                                                align-items: center;
-                                                                font-size: 3.38vw;
-                                                                letter-spacing: 3.44px;
-                                                                border-radius: 0.26vw;
-                                                                font-weight: $fontBold;
-                                                                color: $cream;
+                                                            .buttn {
+                                                              height: 13.77vw;
+                                                              width: 45vw;
+                                                              margin-left: 7vw;
+                                                              background-color: $black;
+                                                              border-radius: 1vw;
+                                                              -webkit-transition: width 500ms;
+                                                              transition: width 500ms;
+                                                              
+                                                              .black-button {
+                                                                  border: none;
+                                                                  height: 13.77vw;
+                                                                  width: 45vw;
+                                                                  display:-webkit-flex;
+                                                                  display: flex;
+                                                                  justify-content: center;
+                                                                  align-items: center;
+                                                                  font-size: 3.38vw;
+                                                                  letter-spacing: 3.44px;
+                                                                  border-radius: 0.26vw;
+                                                                  font-weight: $fontBold;
+                                                                  color: $cream;
+                                                              }
+                                                            }
+
+                                                            .buttn:hover {
+                                                              height: 13.77vw;
+                                                              width: 0;
+                                                          
+                                                              .black-button {
+                                                                  color: $black;
+                                                              }
+                                                          
+                                                              .black-button::after {
+                                                                  content: '\f107';
+                                                                  font-family: fontAwesome;
+                                                                  font-size: 3.38vw;
+                                                                  font-weight: $fontThin;
+                                                                  padding-left: 2vw;
+                                                                  color: $black;
+                                                              }
                                                             }
                                                           }
+                                                        }
+                                                      
+                                                        .specsBrands {
+                                                          display: block;
+                                                          margin-top: -30vw;
+                                                      
+                                                          .specLists {
+                                                            width: 86vw;
+                                                            margin: auto;
+                                                            display: flex;
+                                                            justify-content: space-between;
+                                                            flex-wrap: wrap;
+                                                            background-color: $white-two;
+                                                            background-image: linear-gradient(to bottom left, $white-two, $cream);
+                                                            padding: 8vw 4vw;
+                                                            margin-bottom: 8vw;
+                                                            // border: 1px solid $black;
+                                                            border-radius: 2vw;
+                                                            box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+                                                      
+                                                            ul {
+                                                              display: block;
+                                                              flex-wrap: wrap;
+                                                      
+                                                              li {
+                                                                margin-bottom: 4vw;
+                                                                width: 30vw;
+                                                        
+                                                                h6 {
+                                                                  font-size: 3.38vw;
+                                                                  line-height: 1.5;
+                                                                  font-weight: $fontBold;
+                                                                  margin-bottom: 1vw;
+                                                                }
+                                                                
+                                                                p {
+                                                                  font-size: 3vw;
+                                                                  line-height: 1.5;
+                                                                  font-weight: $fontThin;
+                                                                  padding-bottom: .2vw;
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      
+                                                        .specCards {
+                                                          display: block;
+                                                          width: 86vw;
+                                                          margin: auto;
+                                                          padding-bottom: 16vw;
+                                                      
+                                                          .sCard {
+                                                            // background-image: url(/images/Color-Splash-1.png);
+                                                            background-image: linear-gradient(to bottom left, $white-two, $cream);
+                                                            padding: 8vw 4vw;
+                                                            width: 100%;
+                                                            border-radius: 2vw;
+                                                            background-color: $white-two;
+                                                            box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+                                                            margin-bottom: 5vw;
+                                                      
+                                                            h4 {
+                                                              font-size: 3.38vw;
+                                                              font-weight: $fontBold;
+                                                              margin-bottom: 3vw;
+                                                      
+                                                              span {
+                                                                font-size: 2vw;
+                                                              }
+                                                            }
+                                                      
+                                                            h6 {
+                                                              font-size: 3vw;
+                                                              font-weight: $fontBold;
+                                                              margin-bottom: 1vw;
+                                                            }
+                                                      
+                                                            p {
+                                                              font-size: 3vw;
+                                                              font-weight: $fontThin;
+                                                            }
+                                                          }
+                                                        } 
                                                         
                                                           // .buttn:hover {
                                                           //   height: 13.77vw;
@@ -5352,7 +5481,6 @@ body {
                                                           //       color: $black;
                                                           //   }
                                                           // }
-                                                        
                                                       }
                                                     }
 
