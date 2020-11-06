@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Spaaces</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts: Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome cdn css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Hamburger Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Swiperjs CDN Links -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- GSAP Scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar Start [Desktop]-->
+    <div class="nav-bar content-desktop" id="navbar">
+        <div class="logo-container">
+            <div class="logo">
+                <div class="fillet-div">
+                    <a href="#"><img src="images/logo/logo.jpg" srcset="images/logo/logo@2x.jpg 2x, images/logo/logo@3x.jpg 3x"></a>
+                </div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <ul>
+                <li><a href="#" class="animate__animated animate__pulse"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Navbar End [Desktop]-->
+
+    <!-- Navbar Start [Mobile]-->
+    <div class="nav-bar content-mobile" id="navbarM">
+        <div class="logo-container">
+            <div class="logo">
+                <div class="fillet-div">
+                    <a href="#"><img src="images/logo/logo.jpg" srcset="images/logo/logo@2x.jpg 2x, images/logo/logo@3x.jpg 3x"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" id="myHam">
+            <div class="btn11 not-active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#explore-soultree" class="nav-link">Explore Soultree</a></li>
+                <li><a href="#master-planM" class="nav-link">Master Plan</a></li>
+                <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Navbar End [Mobile]-->
+
+    <!-- Navbar2 Start [Desktop]-->
+    <div class="menu-pages content-desktop" id="navbar2">
+        <div>
+            <a href="#explore-soultree" id="Exp-explore" class="tablinks-menu active-menu" onclick="menuFunc(event, 'explore-soultree')">Explore Soultree</a>
+            <a href="#master-pln" id="Mplan" class="tablinks-menu" onclick="menuFunc(event, '')">Master Plan</a>
+            <a href="#amenities" id="Amne" class="tablinks-menu" onclick="menuFunc(event, 'amenities')">Amenities</a>
+            <a href="#gallery" id="Gall-gallery" class="tablinks-menu" onclick="menuFunc(event, 'gallery')">Gallery</a>
+            <a href="#contact" id="Cont" class="tablinks-menu" onclick="menuFunc(event, 'contact')">Contact</a>
+        </div>
+        <div class="brochure">
+            <div class="call">
+                <i class="fa fa-phone"></i>
+            </div>
+            <div class="num" href style="width: 11vw; color: black; font-family: Titillium Web, sans-serif;">
+                <a href="" style="color: black; font-size: 1.04vw; font-weight: 600;">+91 9008 288 288</a>
+            </div>
+            <div class="dropbtn" id="myBtn">Download Brochure</div>
+        </div>
+    </div>
+    <!-- Navbar2 End [Desktop]-->
+    
+    <!-- Navbar2 End [Mobile]-->
+    <div class="menu-pages content-mobile" id="navbar2M">
+        <div class="brochure">
+            <div class="call">
+                <i class="fa fa-phone"></i>
+            </div>
+            <div class="numM" style="width: 25vw; margin-left: -11vw; font-family: Titillium Web, sans-serif;">
+                <a href="tel:+91 9008 288 288" style="color: black; font-size: 3vw; font-weight: 600;">+91 9008 288 288</a>
+            </div>
+            <div class="dropbtn" id="myBtnMob">Download Brochure</div>
+        </div>
+    </div>
+    <!-- Navbar2 End [Mobile]-->
+
+
+    <!-- Privacy Policy Content Start -->
+    <div class="privacyPolicy">
+        <div class="bg">
+            <h4>Disclaimer</h4>
+            <p>By using or accessing the Website you agree with the Disclaimer without any qualification or limitation. The Company reserves the right to add, alter or delete material from the Website at any time and may, at any time, revise these terms without notifying you. You are bound by any such amendments and the Company therefore advise that you periodically visit this page to review the current Terms.</p><br>
+            <p>The website and all its content are provided on an “as is” and “as available” basis. No information given under this website creates a warranty or expand the scope of any warranty that cannot be disclaimed under the applicable laws. This website is for guidance only. It does not constitute part of an offer or contract. Design and specifications are subject to change without prior notice. Computer generated images are the artist’s impression and are an indication of the actual designs. Further the actual design / construction may vary in fit and finish from the one displayed in the information and material displayed on this website.</p><br>
+            <p>The particulars contained or the details mentioned in respect of the projects/ developments undertaken by the Company including depicting banners/posters of the project/development are being modified in terms of the stipulations/ recommendations under the Real Estate (Regulation and Development) Act 2016 and Rules/ Regulations made thereunder (“RERA”) and accordingly may not be fully in line thereof as of date. You are therefore, required to verify all the details, including but not limited to area, amenities, services, terms of sales, payments and other relevant terms independently with the sales team prior to concluding any decision for buying any unit(s) in any of our projects/ developments. Till such time the details are fully updated, the said infor mation should not be construed as an advertisement. To find out more about our projects/ developments, please call our marketing centres or visit our sales office and speak with our sales staff</p><br>
+            <p>In no event will the Company, its management, its associate companies and /or its employees be liable for a claim made by the users including seeking any cancellation for any of the inaccuracies in the information provided in this Website, though all efforts have to be made to ensure accuracy. The Company under no circumstances will be liable for any expense, loss or damage in cluding, without limitation, indirect or consequential loss or damage, or any expense, loss or damage whatsoever arising from use, or loss of use, of data, arising out of or in connection with the use of this website.</p><br>
+            <p>This website is currently being updated. While enough care is taken by the Company to ensure that information on the website is up to date, accurate and correct, readers are requested to make their independent enquiry before relying upon the same.</p>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <!-- Privacy Policy Content End -->
+
+
+    <!-- #################################################################################### -->
+    <!-- Footer Starts [Desktop]-->
+    <section class="footer content-desktop" id="footer">
+        <div class="footer-main">
+            <h1 class="footer-title">New Age<br>
+                of Smart Homes
+            </h1>
+            <ul class="footer-nav-items">
+                <li><a href="#explore-soultree">Explore Soultree</a></li>
+                <li><a href="#master-pln">Master Plan</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="vertical-line"></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-2019">&copy Copyright | Modern Spaaces 2020. All Right Reserved</p>
+            <a href="privacyPolicy.html" class="policy">Privacy Policy</a>
+            <a href="disclaimer.html" class="disclaimer">Disclaimer</a>
+        </div>
+    </section>
+    <!-- Footer Ends [Desktop]-->
+
+    <!-- Footer Starts [Mobile]-->
+    <section class="footer content-mobile" data-snap-point id="footer">
+        <div class="footer-main">
+            <h1 class="footer-title">New Age<br>
+                of Smart Homes
+            </h1>
+            <ul class="footer-nav-items">
+                <li><a href="#explore-soultree">Explore Soultree</a></li>
+                <li><a href="#master-pln">Master Plan</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="vertical-line"></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <div class="tAndC">
+                <a href="privacyPolicy.html" class="policy">Privacy Policy</a>
+                <a href="disclaimer.html" class="disclaimer">Disclaimer</a>
+            </div>
+            <p class="copyright-2019">&copy Copyright | Modern Spaaces 2019. All Right Reserved</p>
+        </div>
+    </section>
+    <!-- Footer Ends [Mobile]-->
+
+     <!-- Download Broucher Form-->
+     <div class="modal-container"  id="myModalForm">
+        <div class="flex-div">
+            <span onclick="document.getElementById('myModalForm').style.display='none'">&times;</span>
+            <p>Download Broucher</p>
+            <form action="">
+                <input class="flex-input" type="text" placeholder="Name" maxlength="20">
+                <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}">
+                <input type="email" name="email" placeholder="Email ID">
+                <input type="text" placeholder="What would you like to discuss?" maxlength="20">
+                <!-- <div class="buttn">
+                    <a class="black-button" type="submit">SUBMIT</a>
+                </div> -->
+            </form>
+            <div class="download">Download Broucher</div>
+        </div>
+    </div>
+
+
+</body>
+</html>

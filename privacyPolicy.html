@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Spaaces</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts: Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome cdn css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Hamburger Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Swiperjs CDN Links -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- GSAP Scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar Start [Desktop]-->
+    <div class="nav-bar content-desktop" id="navbar">
+        <div class="logo-container">
+            <div class="logo">
+                <div class="fillet-div">
+                    <a href="#"><img src="images/logo/logo.jpg" srcset="images/logo/logo@2x.jpg 2x, images/logo/logo@3x.jpg 3x"></a>
+                </div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <ul>
+                <li><a href="#" class="animate__animated animate__pulse"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Navbar End [Desktop]-->
+
+    <!-- Navbar Start [Mobile]-->
+    <div class="nav-bar content-mobile" id="navbarM">
+        <div class="logo-container">
+            <div class="logo">
+                <div class="fillet-div">
+                    <a href="#"><img src="images/logo/logo.jpg" srcset="images/logo/logo@2x.jpg 2x, images/logo/logo@3x.jpg 3x"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" id="myHam">
+            <div class="btn11 not-active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#explore-soultree" class="nav-link">Explore Soultree</a></li>
+                <li><a href="#master-planM" class="nav-link">Master Plan</a></li>
+                <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Navbar End [Mobile]-->
+
+    <!-- Navbar2 Start [Desktop]-->
+    <div class="menu-pages content-desktop" id="navbar2">
+        <div>
+            <a href="#explore-soultree" id="Exp-explore" class="tablinks-menu active-menu" onclick="menuFunc(event, 'explore-soultree')">Explore Soultree</a>
+            <a href="#master-pln" id="Mplan" class="tablinks-menu" onclick="menuFunc(event, '')">Master Plan</a>
+            <a href="#amenities" id="Amne" class="tablinks-menu" onclick="menuFunc(event, 'amenities')">Amenities</a>
+            <a href="#gallery" id="Gall-gallery" class="tablinks-menu" onclick="menuFunc(event, 'gallery')">Gallery</a>
+            <a href="#contact" id="Cont" class="tablinks-menu" onclick="menuFunc(event, 'contact')">Contact</a>
+        </div>
+        <div class="brochure">
+            <div class="call">
+                <i class="fa fa-phone"></i>
+            </div>
+            <div class="num" href style="width: 11vw; color: black; font-family: Titillium Web, sans-serif;">
+                <a href="" style="color: black; font-size: 1.04vw; font-weight: 600;">+91 9008 288 288</a>
+            </div>
+            <div class="dropbtn" id="myBtn">Download Brochure</div>
+        </div>
+    </div>
+    <!-- Navbar2 End [Desktop]-->
+    
+    <!-- Navbar2 End [Mobile]-->
+    <div class="menu-pages content-mobile" id="navbar2M">
+        <div class="brochure">
+            <div class="call">
+                <i class="fa fa-phone"></i>
+            </div>
+            <div class="numM" style="width: 25vw; margin-left: -11vw; font-family: Titillium Web, sans-serif;">
+                <a href="tel:+91 9008 288 288" style="color: black; font-size: 3vw; font-weight: 600;">+91 9008 288 288</a>
+            </div>
+            <div class="dropbtn" id="myBtnMob">Download Brochure</div>
+        </div>
+    </div>
+    <!-- Navbar2 End [Mobile]-->
+
+
+    <!-- Privacy Policy Content Start -->
+    <div class="privacyPolicy">
+        <div class="bg">
+            <h4>Privacy Policy</h4>
+            <p>312 West by Modern Spaaces, makes every effort to treat your personal information as safely and securely as reasonably possible.</p><br>
+            <p>Please read the following privacy policy to better understand how your personal information may be collected and used as you access various areas of our website.</p><br>
+            <p>As described below, your information may be collected by Modern Spaaces, disclosed to third parties, used by third parties and Modern Spaaces. This Privacy Policy describes the information we collect from you and how we may use that information. Some of the reasons why we collect your personal information include:</p><br>
+            <ol>
+                <li>To register you so that you access certain parts of the Modern Spaaces site</li>
+                <li>To register you so that you may subscribe to our newsletters, so that you may participate in discussion forums on our site and</li>
+                <li>To provide you with a more personalized and meaningful experience on the Bricks and Milestones site.</li>
+            </ol><br>
+            <p>We occasionally employ other companies and individuals to perform functions on our behalf. For example, other companies and individuals may fulfill your orders from us, send you postal mail and e-mail, remove repetitive information from our customer lists, analyze our data, provide us with marketing assistance, and process credit card payments. These third party service providers have access to personal information needed to perform their functions, but may not use it for other purposes. We do not sell, rent, share, or otherwise disclose personally identifiable information from customers for commercial purposes. We do not intend to disclose any personal information of yours without your consent to any third party who is not bound to act on our behalf unless such disclosure is required by law.</p><br>
+        </div>
+    </div>
+    <!-- Privacy Policy Content End -->
+
+
+    <!-- #################################################################################### -->
+    <!-- Footer Starts [Desktop]-->
+    <section class="footer content-desktop" id="footer">
+        <div class="footer-main">
+            <h1 class="footer-title">New Age<br>
+                of Smart Homes
+            </h1>
+            <ul class="footer-nav-items">
+                <li><a href="#explore-soultree">Explore Soultree</a></li>
+                <li><a href="#master-pln">Master Plan</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="vertical-line"></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-2019">&copy Copyright | Modern Spaaces 2020. All Right Reserved</p>
+            <a href="privacyPolicy.html" class="policy">Privacy Policy</a>
+            <a href="disclaimer.html" class="disclaimer">Disclaimer</a>
+        </div>
+    </section>
+    <!-- Footer Ends [Desktop]-->
+
+    <!-- Footer Starts [Mobile]-->
+    <section class="footer content-mobile" data-snap-point id="footer">
+        <div class="footer-main">
+            <h1 class="footer-title">New Age<br>
+                of Smart Homes
+            </h1>
+            <ul class="footer-nav-items">
+                <li><a href="#explore-soultree">Explore Soultree</a></li>
+                <li><a href="#master-pln">Master Plan</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="vertical-line"></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <div class="tAndC">
+                <a href="privacyPolicy.html" class="policy">Privacy Policy</a>
+                <a href="disclaimer.html" class="disclaimer">Disclaimer</a>
+            </div>
+            <p class="copyright-2019">&copy Copyright | Modern Spaaces 2019. All Right Reserved</p>
+        </div>
+    </section>
+    <!-- Footer Ends [Mobile]-->
+
+     <!-- Download Broucher Form-->
+     <div class="modal-container"  id="myModalForm">
+        <div class="flex-div">
+            <span onclick="document.getElementById('myModalForm').style.display='none'">&times;</span>
+            <p>Download Broucher</p>
+            <form action="">
+                <input class="flex-input" type="text" placeholder="Name" maxlength="20">
+                <input class="flex-input" type="text" placeholder="Phone Number*" pattern="[0-9]{10}">
+                <input type="email" name="email" placeholder="Email ID">
+                <input type="text" placeholder="What would you like to discuss?" maxlength="20">
+                <!-- <div class="buttn">
+                    <a class="black-button" type="submit">SUBMIT</a>
+                </div> -->
+            </form>
+            <div class="download">Download Broucher</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
