@@ -1706,66 +1706,58 @@ body {
   }
 
   .carousel-2 {
-    display:-webkit-flex;
-    display: flex;
     font-family: Titillium Web, sans-serif;
+    // background: red;
+    height: 40vw;
 
     .carousel-flex{
-      overflow: hidden;
-      width: 100%;
-      height: 50vw;
-      z-index: 1;
-      position: relative;
-      display:-webkit-flex;
       display: flex;
-      flex-wrap: wrap;
-      // justify-content: space-between;
-      align-items: center;
-      margin-left: 14.9vw;
-      margin-top: -13vw;
+      width: 70vw;
+      height: 40vw;
+      margin: auto;
 
-      .carousel {
-        position: absolute;
-        margin-left: 18.7vw;
+      #g1 {
         order: 3;
         display:-webkit-flex;
         display: flex;
-        align-items: center;
+        height: 100%;
+        margin-top: 3vw;
+        margin-left: 20.5vw;
+        // align-items: center;
       
-        &__list {
+        .carousel_list {
           display:-webkit-flex;
           display: flex;
           list-style: none;
           position: relative;
           width: 100%;
-          height: 15.625vw;
+          height: 300px;
           justify-content: center;
-          perspective: 15.625vw;
+          perspective: 300px;
         }
         
-        &__item1 {
+        .carousel_item1 {
           display:-webkit-flex;
           display: flex;
           align-items: center;
           justify-content: center;
           color: #fff;
           font-size: 0px;
-          width: 25.8vw;
-          height: 33.8vw;
-          border-radius: 1vw;
+          width: 150px;
+          height: 250px;
+          border-radius: 12px;
           box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
           position: absolute;
           transition: all .3s ease-in;
-
           
           &:nth-child(1) {
-              width: 25.8vw;
-              height: 33.8vw;
-              border-radius: 1vw;
-          img {
-              width: 100%;
-              height: auto;
-              border-radius: 1vw;
+            width: 25.8vw;
+            height: 33.8vw;
+            border-radius: 1vw;
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 1vw;
             }
           }
           &:nth-child(2) {
@@ -1782,7 +1774,7 @@ body {
               width: 25.8vw;
                   height: 33.8vw;
                   border-radius: 1vw;
-      
+        
               img {
               width: 100%;
               height: auto;
@@ -1816,16 +1808,16 @@ body {
           
           &[data-pos="-1"] {
             opacity: 0.2;
-            filter: blur(1px) grayscale(10%);
+            filter: blur(1px) grayscale(100%);
           }
-      
+        
           &[data-pos="1"] {
             opacity: 0;
             filter: blur(1px) grayscale(10%);
           }
           
           &[data-pos="-1"] {
-            transform: translateX(-50%) scale(.7);
+            transform: translateX(-50%) scale(.8);
             z-index: 4;
           }
           
@@ -1836,14 +1828,14 @@ body {
           
           &[data-pos="-2"] {
             opacity: 0;
-            filter: blur(3px) grayscale(10%);
+            filter: blur(3px) grayscale(100%);
           }
           
           &[data-pos="2"] {
             opacity: 0;
             filter: blur(3px) grayscale(20%);
           }
-      
+        
           &[data-pos="-2"] {
             transform: translateX(-70%) scale(.8);
             z-index: 3;
@@ -1858,15 +1850,14 @@ body {
 
       .ellipse {
         order: 2;
-        position: relative;
         width: 5vw;
         height: 5vw;
         border-radius: 50%;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         background-color: $white-two;
         z-index: 10;
-        margin-top: 14vw;
-        margin-left: 2.5vw;
+        margin-top: 18vw;
+        margin-left: 4vw;
         color: $black;
         border: none;
         outline:none;
@@ -1883,7 +1874,6 @@ body {
 
       .carousel-descrip_t1 {
         order: 1;
-        position: relative;
         width: 27.24vw;
         // margin-right: 34vw;
         margin-top: 12vw;
@@ -1900,13 +1890,15 @@ body {
         }
       }
     }
+
     .color-splash-2 {
-      position: absolute;
-      width: 48vw;
-      height: 47.19vw;
-      margin-top: -3vw;
-      margin-left: 52vw;
-      overflow: hidden;
+    position: absolute;
+    width: 48vw;
+    height: 40vw;
+    margin-top: -42vw;
+    margin-left: 52vw;
+    overflow: hidden;
+    z-index: -1;
 
       img {
         width: auto;
@@ -1914,6 +1906,8 @@ body {
       }
     }
   }
+
+  
 
                                           // @media only screen and (max-width: 500px) {
                                           //   .main-section {
@@ -2514,7 +2508,7 @@ body {
                                                                           }
                                                                           
                                                                           &[data-pos="1"] {
-                                                                            transform: translateX(60%) scale(.7);
+                                                                            transform: translateX(50%) scale(.8);
                                                                             z-index: 4;
                                                                           }
                                                                           
@@ -2549,7 +2543,7 @@ body {
                                                                         background-color: $white-two;
                                                                         z-index: 10;
                                                                         margin-top: 16.5vw;
-                                                                        margin-left: 47vw;
+                                                                        margin-left: 44.6vw;
                                                                         color: $black;
                                                                         transform: scale(2.5);
                                                                         border: none;
@@ -2598,32 +2592,26 @@ body {
                                                                   }
 
                                                                   .carousel-2 {
-                                                                    display:-webkit-flex;
-                                                                    display: block;
                                                                     font-family: Titillium Web, sans-serif;
-                                                                    height: 145vw;
+                                                                    // background: red;
+                                                                    height: 130vw;
                                                                 
                                                                     .carousel-flex{
-                                                                      // background: red;
-                                                                      margin-left: 0vw;
-                                                                      position: relative;
                                                                       display: block;
-                                                                      // justify-content: space-between;
-                                                                      align-items: center;
-                                                                      width: 100%;
+                                                                      width: 86vw;
                                                                       height: 100%;
-                                                                      overflow: visible;
-                                                                      overflow-x: hidden;
+                                                                      margin: auto;
                                                                 
-                                                                      .carousel {
-                                                                        position: absolute  ;
+                                                                      #g1 {
+                                                                        order: 2;
                                                                         display:-webkit-flex;
                                                                         display: flex;
-                                                                        align-items: center;
-                                                                        margin-left: 18vw;
-                                                                        margin-top: -8vw;
-                                                                        
-                                                                        &__list {
+                                                                        height: 100%;
+                                                                        margin-top: 7vw;
+                                                                        margin-left: 20.5vw;
+                                                                        // align-items: center;
+                                                                      
+                                                                        .carousel_list {
                                                                           display:-webkit-flex;
                                                                           display: flex;
                                                                           list-style: none;
@@ -2634,7 +2622,7 @@ body {
                                                                           perspective: 15.625vw;
                                                                         }
                                                                         
-                                                                        &__item1 {
+                                                                        .carousel_item1 {
                                                                           display:-webkit-flex;
                                                                           display: flex;
                                                                           align-items: center;
@@ -2643,26 +2631,26 @@ body {
                                                                           font-size: 0px;
                                                                           width: 86vw;
                                                                           height: 68.12vw;
-                                                                          border-radius: 1vw;
+                                                                          border-radius: 3vw;
                                                                           box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
                                                                           position: absolute;
                                                                           transition: all .3s ease-in;
-                                                                
+                                                                          
                                                                           &:nth-child(1) {
                                                                             width: 51.93vw;
                                                                             height: 68.12vw;
                                                                             border-radius: 3vw;
-                                                                          img {
-                                                                              width: 100%;
-                                                                              height: auto;
-                                                                              border-radius: 3vw;
+                                                                            img {
+                                                                                width: 100%;
+                                                                                height: auto;
+                                                                                border-radius: 3vw;
                                                                             }
                                                                           }
                                                                           &:nth-child(2) {
                                                                             width: 51.93vw;
                                                                             height: 68.12vw;
                                                                             border-radius: 3vw;
-                                                                          img {
+                                                                              img {
                                                                               width: 100%;
                                                                               height: auto;
                                                                               border-radius: 3vw;
@@ -2672,7 +2660,8 @@ body {
                                                                             width: 51.93vw;
                                                                             height: 68.12vw;
                                                                             border-radius: 3vw;
-                                                                          img {
+                                                                      
+                                                                              img {
                                                                               width: 100%;
                                                                               height: auto;
                                                                               border-radius: 3vw;
@@ -2682,7 +2671,7 @@ body {
                                                                             width: 51.93vw;
                                                                             height: 68.12vw;
                                                                             border-radius: 3vw;
-                                                                          img {
+                                                                              img {
                                                                               width: 100%;
                                                                               height: auto;
                                                                               border-radius: 3vw;
@@ -2692,7 +2681,7 @@ body {
                                                                             width: 51.93vw;
                                                                             height: 68.12vw;
                                                                             border-radius: 3vw;
-                                                                          img {
+                                                                              img {
                                                                               width: 100%;
                                                                               height: auto;
                                                                               border-radius: 3vw;
@@ -2714,12 +2703,12 @@ body {
                                                                           }
                                                                           
                                                                           &[data-pos="-1"] {
-                                                                            transform: translateX(-70%) scale(.7);
+                                                                            transform: translateX(-50%) scale(.8);
                                                                             z-index: 4;
                                                                           }
                                                                           
                                                                           &[data-pos="1"] {
-                                                                            transform: translateX(40%) scale(.9);
+                                                                            transform: translateX(50%) scale(.8);
                                                                             z-index: 4;
                                                                           }
                                                                           
@@ -2746,17 +2735,17 @@ body {
                                                                       }
                                                                 
                                                                       .ellipse {
-                                                                        position: absolute;
+                                                                        order: 1;
                                                                         width: 5vw;
                                                                         height: 5vw;
                                                                         border-radius: 50%;
                                                                         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
                                                                         background-color: $white-two;
                                                                         z-index: 10;
-                                                                        margin-top: 51vw;
-                                                                        margin-left: 8vw;
+                                                                        margin-top: -96vw;
+                                                                        margin-left: 4vw;
                                                                         color: $black;
-                                                                        transform: scale(2);
+                                                                        transform: scale(2.5);
                                                                         border: none;
                                                                         outline:none;
                                                                         display:-webkit-flex;
@@ -2771,10 +2760,10 @@ body {
                                                                       }
                                                                 
                                                                       .carousel-descrip_t1 {
-                                                                        position: absolute;
+                                                                        order: 3;
                                                                         width: 82vw;
-                                                                        margin-left: 7vw;
-                                                                        margin-top: 90vw;
+                                                                        // margin-right: 34vw;
+                                                                        margin-top: 35vw;
                                                                   
                                                                         .carousel-title {
                                                                           font-size: 5.31vw;
@@ -2790,12 +2779,13 @@ body {
                                                                     }
                                                                 
                                                                     .color-splash-2 {
-                                                                      position: absolute;
-                                                                      width: 56.28vw;
-                                                                      height: 91.30vw;
-                                                                      margin-top: -130vw;
-                                                                      margin-left: 43.5vw;
-                                                                      overflow: hidden;
+                                                                    position: absolute;
+                                                                    width: 56.28vw;
+                                                                    height: 91.30vw;
+                                                                    margin-top: -140vw;
+                                                                    margin-left: 52vw;
+                                                                    overflow: hidden;
+                                                                    z-index: -1;
                                                                 
                                                                       img {
                                                                         width: auto;
@@ -2803,6 +2793,212 @@ body {
                                                                       }
                                                                     }
                                                                   }
+                                                                  // .carousel-2 {
+                                                                  //   display:-webkit-flex;
+                                                                  //   display: block;
+                                                                  //   font-family: Titillium Web, sans-serif;
+                                                                  //   height: 145vw;
+                                                                
+                                                                  //   .carousel-flex{
+                                                                  //     // background: red;
+                                                                  //     margin-left: 0vw;
+                                                                  //     position: relative;
+                                                                  //     display: block;
+                                                                  //     // justify-content: space-between;
+                                                                  //     align-items: center;
+                                                                  //     width: 100%;
+                                                                  //     height: 100%;
+                                                                  //     overflow: visible;
+                                                                  //     overflow-x: hidden;
+                                                                
+                                                                  //     .carousel {
+                                                                  //       position: absolute  ;
+                                                                  //       display:-webkit-flex;
+                                                                  //       display: flex;
+                                                                  //       align-items: center;
+                                                                  //       margin-left: 18vw;
+                                                                  //       margin-top: -8vw;
+                                                                        
+                                                                  //       &__list {
+                                                                  //         display:-webkit-flex;
+                                                                  //         display: flex;
+                                                                  //         list-style: none;
+                                                                  //         position: relative;
+                                                                  //         width: 100%;
+                                                                  //         height: 15.625vw;
+                                                                  //         justify-content: center;
+                                                                  //         perspective: 15.625vw;
+                                                                  //       }
+                                                                        
+                                                                  //       &__item1 {
+                                                                  //         display:-webkit-flex;
+                                                                  //         display: flex;
+                                                                  //         align-items: center;
+                                                                  //         justify-content: center;
+                                                                  //         color: #fff;
+                                                                  //         font-size: 0px;
+                                                                  //         width: 86vw;
+                                                                  //         height: 68.12vw;
+                                                                  //         border-radius: 1vw;
+                                                                  //         box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+                                                                  //         position: absolute;
+                                                                  //         transition: all .3s ease-in;
+                                                                
+                                                                  //         &:nth-child(1) {
+                                                                  //           width: 51.93vw;
+                                                                  //           height: 68.12vw;
+                                                                  //           border-radius: 3vw;
+                                                                  //         img {
+                                                                  //             width: 100%;
+                                                                  //             height: auto;
+                                                                  //             border-radius: 3vw;
+                                                                  //           }
+                                                                  //         }
+                                                                  //         &:nth-child(2) {
+                                                                  //           width: 51.93vw;
+                                                                  //           height: 68.12vw;
+                                                                  //           border-radius: 3vw;
+                                                                  //         img {
+                                                                  //             width: 100%;
+                                                                  //             height: auto;
+                                                                  //             border-radius: 3vw;
+                                                                  //           }
+                                                                  //         }
+                                                                  //         &:nth-child(3) {
+                                                                  //           width: 51.93vw;
+                                                                  //           height: 68.12vw;
+                                                                  //           border-radius: 3vw;
+                                                                  //         img {
+                                                                  //             width: 100%;
+                                                                  //             height: auto;
+                                                                  //             border-radius: 3vw;
+                                                                  //           }
+                                                                  //         }
+                                                                  //         &:nth-child(4) {
+                                                                  //           width: 51.93vw;
+                                                                  //           height: 68.12vw;
+                                                                  //           border-radius: 3vw;
+                                                                  //         img {
+                                                                  //             width: 100%;
+                                                                  //             height: auto;
+                                                                  //             border-radius: 3vw;
+                                                                  //           }
+                                                                  //         }
+                                                                  //         &:nth-child(5) {
+                                                                  //           width: 51.93vw;
+                                                                  //           height: 68.12vw;
+                                                                  //           border-radius: 3vw;
+                                                                  //         img {
+                                                                  //             width: 100%;
+                                                                  //             height: auto;
+                                                                  //             border-radius: 3vw;
+                                                                  //           }
+                                                                  //         }
+                                                                          
+                                                                  //         &[data-pos="0"] {
+                                                                  //           z-index: 5;
+                                                                  //         }
+                                                                          
+                                                                  //         &[data-pos="-1"] {
+                                                                  //           opacity: 0.2;
+                                                                  //           filter: blur(1px) grayscale(100%);
+                                                                  //         }
+                                                                      
+                                                                  //         &[data-pos="1"] {
+                                                                  //           opacity: 0;
+                                                                  //           filter: blur(1px) grayscale(10%);
+                                                                  //         }
+                                                                          
+                                                                  //         &[data-pos="-1"] {
+                                                                  //           transform: translateX(-50%) scale(.2);
+                                                                  //           z-index: 4;
+                                                                  //         }
+                                                                          
+                                                                  //         &[data-pos="1"] {
+                                                                  //           transform: translateX(40%) scale(.9);
+                                                                  //           z-index: 4;
+                                                                  //         }
+                                                                          
+                                                                  //         &[data-pos="-2"] {
+                                                                  //           opacity: 0;
+                                                                  //           filter: blur(3px) grayscale(100%);
+                                                                  //         }
+                                                                          
+                                                                  //         &[data-pos="2"] {
+                                                                  //           opacity: 0;
+                                                                  //           filter: blur(3px) grayscale(20%);
+                                                                  //         }
+                                                                      
+                                                                  //         &[data-pos="-2"] {
+                                                                  //           transform: translateX(-70%) scale(.8);
+                                                                  //           z-index: 3;
+                                                                  //         }
+                                                                          
+                                                                  //         &[data-pos="2"] {
+                                                                  //           transform: translateX(70%) scale(.8);
+                                                                  //           z-index: 3;
+                                                                  //         }
+                                                                  //       }
+                                                                  //     }
+                                                                
+                                                                  //     .ellipse {
+                                                                  //       position: absolute;
+                                                                  //       width: 5vw;
+                                                                  //       height: 5vw;
+                                                                  //       border-radius: 50%;
+                                                                  //       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                                                                  //       background-color: $white-two;
+                                                                  //       z-index: 10;
+                                                                  //       margin-top: 51vw;
+                                                                  //       margin-left: 8vw;
+                                                                  //       color: $black;
+                                                                  //       transform: scale(2);
+                                                                  //       border: none;
+                                                                  //       outline:none;
+                                                                  //       display:-webkit-flex;
+                                                                  //       display: flex;
+                                                                  //       justify-content: center;
+                                                                  //       align-items: center;
+                                                                  
+                                                                  //       i {
+                                                                  //         font-size: 3vw;
+                                                                  //         z-index: 50;
+                                                                  //       }
+                                                                  //     }
+                                                                
+                                                                  //     .carousel-descrip_t1 {
+                                                                  //       position: absolute;
+                                                                  //       width: 82vw;
+                                                                  //       margin-left: 7vw;
+                                                                  //       margin-top: 90vw;
+                                                                  
+                                                                  //       .carousel-title {
+                                                                  //         font-size: 5.31vw;
+                                                                  //         font-weight: $fontBold;
+                                                                  //         margin-bottom: 1.93vw;
+                                                                  //       }
+                                                                  
+                                                                  //       .carousel-details {
+                                                                  //         font-size: 3.38vw;
+                                                                  //         line-height: 1.5;
+                                                                  //       }
+                                                                  //     }
+                                                                  //   }
+                                                                
+                                                                  //   .color-splash-2 {
+                                                                  //     position: absolute;
+                                                                  //     width: 56.28vw;
+                                                                  //     height: 91.30vw;
+                                                                  //     margin-top: -130vw;
+                                                                  //     margin-left: 43.5vw;
+                                                                  //     overflow: hidden;
+                                                                
+                                                                  //     img {
+                                                                  //       width: auto;
+                                                                  //       height: 100%;
+                                                                  //     }
+                                                                  //   }
+                                                                  // }
                                                               }
 
 
@@ -4871,7 +5067,7 @@ body {
         }
         
         &[data-pos="1"] {
-          transform: translateX(50%) scale(.7);
+          transform: translateX(50%) scale(.8);
           z-index: 4;
         }
         
@@ -4906,7 +5102,7 @@ body {
         background-color: $white-two;
         z-index: 10;
         margin-top: 18.5vw;
-        margin-left: 19.4vw;
+        margin-left: 20.6vw;
         color: $black;
         border: none;
         outline:none;
@@ -5079,7 +5275,7 @@ body {
                                                                           }
                                                                           
                                                                           &[data-pos="1"] {
-                                                                            transform: translateX(60%) scale(.7);
+                                                                            transform: translateX(50%) scale(.8);
                                                                             z-index: 4;
                                                                           }
                                                                           
@@ -5114,7 +5310,7 @@ body {
                                                                           background-color: $white-two;
                                                                           z-index: 10;
                                                                           margin-top: 16.5vw;
-                                                                          margin-left: 47vw;
+                                                                          margin-left: 44vw;
                                                                           color: $black;
                                                                           transform: scale(2.5);
                                                                           border: none;
@@ -6234,401 +6430,6 @@ box-shadow: 10px 14px 120px -2px rgba(0,0,0,0.75);
       display: block;
   }
 }
-
-
-
-
-
-
-#g1 {
-  display:-webkit-flex;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  font-family: Arial;
-
-  .carousel_list {
-    display:-webkit-flex;
-    display: flex;
-    list-style: none;
-    position: relative;
-    width: 100%;
-    height: 300px;
-    justify-content: center;
-    perspective: 300px;
-  }
-  
-  .carousel_item1 {
-    display:-webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 0px;
-    width: 150px;
-    height: 250px;
-    border-radius: 12px;
-    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
-    position: absolute;
-    transition: all .3s ease-in;
-    
-    &:nth-child(1) {
-      width: 25.8vw;
-      height: 33.8vw;
-      border-radius: 1vw;
-  img {
-      width: 100%;
-      height: auto;
-      border-radius: 1vw;
-    }
-  }
-  &:nth-child(2) {
-      width: 25.8vw;
-          height: 33.8vw;
-          border-radius: 1vw;
-      img {
-      width: 100%;
-      height: auto;
-      border-radius: 1vw;
-    }
-  }
-  &:nth-child(3) {
-      width: 25.8vw;
-          height: 33.8vw;
-          border-radius: 1vw;
-
-      img {
-      width: 100%;
-      height: auto;
-      border-radius: 1vw;
-    }
-  }
-  &:nth-child(4) {
-      width: 25.8vw;
-          height: 33.8vw;
-          border-radius: 1vw;
-      img {
-      width: 100%;
-      height: auto;
-      border-radius: 1vw;
-    }
-  }
-  &:nth-child(5) {
-      width: 25.8vw;
-          height: 33.8vw;
-          border-radius: 1vw;
-      img {
-      width: 100%;
-      height: auto;
-      border-radius: 1vw;
-    }
-  }
-  
-  &[data-pos="0"] {
-    z-index: 5;
-  }
-  
-  &[data-pos="-1"] {
-    opacity: 0.5;
-    filter: blur(1px) grayscale(100%);
-  }
-
-  &[data-pos="1"] {
-    opacity: 0;
-    filter: blur(1px) grayscale(10%);
-  }
-  
-  &[data-pos="-1"] {
-    transform: translateX(-40%) scale(.9);
-    z-index: 4;
-  }
-  
-  &[data-pos="1"] {
-    transform: translateX(40%) scale(.9);
-    z-index: 4;
-  }
-  
-  &[data-pos="-2"] {
-    opacity: 0.2;
-    filter: blur(3px) grayscale(100%);
-  }
-  
-  &[data-pos="2"] {
-    opacity: 0;
-    filter: blur(3px) grayscale(20%);
-  }
-
-  &[data-pos="-2"] {
-    transform: translateX(-70%) scale(.8);
-    z-index: 3;
-  }
-  
-  &[data-pos="2"] {
-    transform: translateX(70%) scale(.8);
-    z-index: 3;
-  }
-  }
-}
-
-                                                    @media only screen and (max-width:1000px) {
-                                                      #g1 {
-                                                        display:-webkit-flex;
-                                                        display: flex;
-                                                        width: 100%;
-                                                        height: 100%;
-                                                        align-items: center;
-                                                      
-                                                        .carousel_list {
-                                                          display:-webkit-flex;
-                                                          display: flex;
-                                                          list-style: none;
-                                                          position: relative;
-                                                          width: 100%;
-                                                          height: 300px;
-                                                          justify-content: center;
-                                                          perspective: 300px;
-                                                        }
-                                                        
-                                                        .carousel_item1 {
-                                                          display:-webkit-flex;
-                                                          display: flex;
-                                                          align-items: center;
-                                                          justify-content: center;
-                                                          color: #fff;
-                                                          font-size: 0px;
-                                                          width: 150px;
-                                                          height: 250px;
-                                                          border-radius: 12px;
-                                                          box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
-                                                          position: absolute;
-                                                          transition: all .3s ease-in;
-                                                          
-                                                          &:nth-child(1) {
-                                                            width: 51.93vw;
-                                                            height: 68.12vw;
-                                                            border-radius: 3vw;
-                                                          img {
-                                                              width: 100%;
-                                                              height: auto;
-                                                              border-radius: 3vw;
-                                                            }
-                                                        }
-                                                        &:nth-child(2) {
-                                                          width: 51.93vw;
-                                                          height: 68.12vw;
-                                                          border-radius: 3vw;
-                                                        img {
-                                                            width: 100%;
-                                                            height: auto;
-                                                            border-radius: 3vw;
-                                                          }
-                                                        }
-                                                        &:nth-child(3) {
-                                                          width: 51.93vw;
-                                                          height: 68.12vw;
-                                                          border-radius: 3vw;
-                                                        img {
-                                                            width: 100%;
-                                                            height: auto;
-                                                            border-radius: 3vw;
-                                                          }
-                                                        }
-                                                        &:nth-child(4) {
-                                                          width: 51.93vw;
-                                                          height: 68.12vw;
-                                                          border-radius: 3vw;
-                                                        img {
-                                                            width: 100%;
-                                                            height: auto;
-                                                            border-radius: 3vw;
-                                                          }
-                                                        }
-                                                        &:nth-child(5) {
-                                                          width: 51.93vw;
-                                                          height: 68.12vw;
-                                                          border-radius: 3vw;
-                                                        img {
-                                                            width: 100%;
-                                                            height: auto;
-                                                            border-radius: 3vw;
-                                                          }
-                                                        }
-                                                        
-                                                        &[data-pos="0"] {
-                                                          z-index: 5;
-                                                        }
-                                                        
-                                                        &[data-pos="-1"] {
-                                                          opacity: 0.5;
-                                                          filter: blur(1px) grayscale(100%);
-                                                        }
-                                                      
-                                                        &[data-pos="1"] {
-                                                          opacity: 0;
-                                                          filter: blur(1px) grayscale(10%);
-                                                        }
-                                                        
-                                                        &[data-pos="-1"] {
-                                                          transform: translateX(-40%) scale(.9);
-                                                          z-index: 4;
-                                                        }
-                                                        
-                                                        &[data-pos="1"] {
-                                                          transform: translateX(40%) scale(.9);
-                                                          z-index: 4;
-                                                        }
-                                                        
-                                                        &[data-pos="-2"] {
-                                                          opacity: 0.2;
-                                                          filter: blur(3px) grayscale(100%);
-                                                        }
-                                                        
-                                                        &[data-pos="2"] {
-                                                          opacity: 0;
-                                                          filter: blur(3px) grayscale(20%);
-                                                        }
-                                                      
-                                                        &[data-pos="-2"] {
-                                                          transform: translateX(-70%) scale(.8);
-                                                          z-index: 3;
-                                                        }
-                                                        
-                                                        &[data-pos="2"] {
-                                                          transform: translateX(70%) scale(.8);
-                                                          z-index: 3;
-                                                        }
-                                                        }
-                                                      }
-                                                    }
-
-// #g2_c {
-//   display: flex;
-//   width: 100%;
-//   height: 100%;
-//   align-items: center;
-//   font-family: Arial;
-
-//   .carousel_list2 {
-//     display: flex;
-//     list-style: none;
-//     position: relative;
-//     width: 100%;
-//     height: 300px;
-//     justify-content: center;
-//     perspective: 300px;
-//   }
-  
-//   .carousel_item2 {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     color: #fff;
-//     font-size: 0px;
-//     width: 150px;
-//     height: 250px;
-//     border-radius: 12px;
-//     box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
-//     position: absolute;
-//     transition: all .3s ease-in;
-    
-//     &:nth-child(1) {
-//       width: 25.8vw;
-//       height: 33.8vw;
-//       border-radius: 1vw;
-//   img {
-//       width: 100%;
-//       height: auto;
-//       border-radius: 1vw;
-//     }
-//   }
-//   &:nth-child(2) {
-//       width: 25.8vw;
-//           height: 33.8vw;
-//           border-radius: 1vw;
-//       img {
-//       width: 100%;
-//       height: auto;
-//       border-radius: 1vw;
-//     }
-//   }
-//   &:nth-child(3) {
-//       width: 25.8vw;
-//           height: 33.8vw;
-//           border-radius: 1vw;
-
-//       img {
-//       width: 100%;
-//       height: auto;
-//       border-radius: 1vw;
-//     }
-//   }
-//   &:nth-child(4) {
-//       width: 25.8vw;
-//           height: 33.8vw;
-//           border-radius: 1vw;
-//       img {
-//       width: 100%;
-//       height: auto;
-//       border-radius: 1vw;
-//     }
-//   }
-//   &:nth-child(5) {
-//       width: 25.8vw;
-//           height: 33.8vw;
-//           border-radius: 1vw;
-//       img {
-//       width: 100%;
-//       height: auto;
-//       border-radius: 1vw;
-//     }
-//   }
-  
-//   &[data-pos="0"] {
-//     z-index: 5;
-//   }
-  
-//   &[data-pos="-1"] {
-//     opacity: 0;
-//     filter: blur(1px) grayscale(100%);
-//   }
-
-//   &[data-pos="1"] {
-//     opacity: 0.5;
-//     filter: blur(1px) grayscale(10%);
-//   }
-  
-//   &[data-pos="-1"] {
-//     transform: translateX(-40%) scale(.9);
-//     z-index: 4;
-//   }
-  
-//   &[data-pos="1"] {
-//     transform: translateX(40%) scale(.9);
-//     z-index: 4;
-//   }
-  
-//   &[data-pos="-2"] {
-//     opacity: 0;
-//     filter: blur(3px) grayscale(100%);
-//   }
-  
-//   &[data-pos="2"] {
-//     opacity: 0.2;
-//     filter: blur(3px) grayscale(20%);
-//   }
-
-//   &[data-pos="-2"] {
-//     transform: translateX(-70%) scale(.8);
-//     z-index: 3;
-//   }
-  
-//   &[data-pos="2"] {
-//     transform: translateX(70%) scale(.8);
-//     z-index: 3;
-//   }
-//   }
-// }
 
 
 
