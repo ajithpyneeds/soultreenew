@@ -2451,6 +2451,7 @@ body {
     font-family: Titillium Web, sans-serif;
     height: 130vw;
     width: 100vw;
+    overflow: hidden;
   }
   .carousel-2 .carousel-flex {
     display: block;
