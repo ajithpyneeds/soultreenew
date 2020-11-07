@@ -2980,6 +2980,11 @@ body {
           padding: 1vw 1.4vw;
           border: 1px solid $white-six;
           background-color: $white-five;
+          border-radius: 1vw;
+          margin-right: .1vw;
+          border: none;
+          outline: none;
+          box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
       }
       
       .active, .click-btn-1:hover {
@@ -3608,6 +3613,7 @@ body {
                                                                 font-size: 3.38vw;
                                                                 font-weight: 300;
                                                                 padding: 3vw 8vw;
+                                                                margin-right: .5vw;
                                                                 border: 1px solid $white-six;
                                                                 background-color: $white-five;
                                                                 outline: none;

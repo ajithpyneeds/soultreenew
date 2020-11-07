@@ -2842,6 +2842,12 @@ body {
   padding: 1vw 1.4vw;
   border: 1px solid #e0e0e0;
   background-color: #f8f8f8;
+  border-radius: 1vw;
+  margin-right: .1vw;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2);
+          box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2);
 }
 
 .floor-plans .planView .active, .floor-plans .planView .click-btn-1:hover {
@@ -3500,6 +3506,7 @@ body {
     font-size: 3.38vw;
     font-weight: 300;
     padding: 3vw 8vw;
+    margin-right: .5vw;
     border: 1px solid #e0e0e0;
     background-color: #f8f8f8;
     outline: none;
