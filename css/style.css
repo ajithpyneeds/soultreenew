@@ -2198,7 +2198,7 @@ body {
 .carousel-2 .color-splash-2 {
   position: absolute;
   width: 48vw;
-  height: 40vw;
+  height: 45vw;
   margin-top: -42vw;
   margin-left: 52vw;
   overflow: hidden;
@@ -2450,6 +2450,7 @@ body {
   .carousel-2 {
     font-family: Titillium Web, sans-serif;
     height: 130vw;
+    width: 100vw;
   }
   .carousel-2 .carousel-flex {
     display: block;
@@ -2649,9 +2650,9 @@ body {
     width: 56.28vw;
     height: 91.30vw;
     margin-top: -140vw;
-    margin-left: 52vw;
-    overflow: hidden;
+    margin-left: 43.8vw;
     z-index: -1;
+    overflow: hidden;
   }
   .carousel-2 .color-splash-2 img {
     width: auto;
